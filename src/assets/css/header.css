@@ -1,0 +1,197 @@
+.navbar {
+  background-color: #343434;
+  width: 100%;
+}
+
+.navbar .navbar-nav {
+  margin-left: 60px;
+}
+
+.navbar .navbar-nav .nav-item {
+  padding: 8px 0px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  color: #f2d742;
+  padding: 0px 20px;
+  border-right: 1px solid #f2d742;
+}
+
+.navbar .navbar-nav .nav-item .contacto {
+  border: none;
+}
+
+.navbar .navbar-nav div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar .navbar-nav div .redes {
+  padding: 5px 0;
+  width: 60px;
+}
+
+.navbar .navbar-nav div .redes .nav-link {
+  padding: 0;
+  border: none;
+}
+
+.navbar .navbar-nav div .redes1 {
+  margin-left: 260px;
+}
+
+#header2 {
+  padding: 0px 40px;
+  background-color: #909599;
+  width: 100%;
+  margin: 0;
+}
+
+#header2 .col-sm-3 {
+  padding: 35px;
+  padding-left: 60px;
+}
+
+#header2 .drop {
+  padding: 35px 0;
+}
+
+#header2 .drop .dropdown .btn {
+  padding: 8px 25px;
+  border-radius: 8px;
+  background-color: #f2d742;
+}
+
+#header2 .drop .dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+#header2 .drop .dropdown > .dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+  pointer-events: none;
+}
+
+#header2 .col-sm-5 {
+  padding: 36px;
+  padding-bottom: 0;
+}
+
+#header2 .col-sm-5 form {
+  text-align: right;
+}
+
+#header2 .col-sm-5 form input {
+  border: none;
+  border-radius: 15px;
+}
+
+#header2 .col-sm-5 form :-ms-input-placeholder {
+  color: #909599;
+}
+
+#header2 .col-sm-5 form .buscar {
+  position: relative;
+  top: -34px;
+  margin-left: -70px;
+  background-color: #f2d742;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border: none;
+  padding: 4px 15px;
+}
+
+#header2 .col-sm-5 form .buscar svg {
+  margin-right: 10px;
+}
+
+#header2 .carro {
+  padding: 30px;
+  text-align: right;
+}
+
+#header2 .carro img {
+  width: 50px;
+}
+
+@media (max-width: 576px) {
+  .navbar .navbar-nav {
+    text-align: center;
+    margin-left: 0px;
+  }
+  .navbar .navbar-nav .nav-item {
+    padding: 8px 0px;
+  }
+  .navbar .navbar-nav .nav-item .nav-link {
+    padding: 0px 0px;
+    border-right: none;
+  }
+  .navbar .navbar-nav .nav-item .contacto {
+    border: none;
+  }
+  .navbar .navbar-nav div {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .navbar .navbar-nav div .redes {
+    margin: 20px 0;
+    padding: 5px 0;
+    width: 60px;
+  }
+  .navbar .navbar-nav div .redes .nav-link {
+    padding: 0;
+    border: none;
+  }
+  .navbar .navbar-nav div .redes1 {
+    margin-left: 0px;
+  }
+  #header2 {
+    padding: 0px 20px;
+  }
+  #header2 .col-sm-3 {
+    padding: 0;
+    position: fixed;
+    top: 10px;
+    z-index: 9999;
+  }
+  #header2 .col-sm-3 img {
+    max-width: 75%;
+    width: 100px;
+  }
+  #header2 .drop {
+    max-width: 50%;
+    padding: 35px 0;
+  }
+  #header2 .drop .dropdown .btn {
+    padding: 8px 25px;
+  }
+  #header2 .col-sm-5 {
+    padding: 36px 0;
+    padding-bottom: 0;
+  }
+  #header2 .col-sm-5 form {
+    margin-bottom: 0;
+  }
+  #header2 .col-sm-5 form .buscar {
+    top: -36px;
+    margin-left: -70px;
+    padding: 4px 15px;
+  }
+  #header2 .carro {
+    max-width: 50%;
+    padding: 35px 0;
+    padding-right: 20px;
+  }
+  #header2 .carro .buscar2 {
+    color: #f2d742;
+  }
+  #header2 .carro .buscar2 svg {
+    height: 25px;
+    width: 25px;
+    margin-right: 15px;
+  }
+  #header2 .carro img {
+    width: 40px;
+  }
+}
+/*# sourceMappingURL=header.css.map */

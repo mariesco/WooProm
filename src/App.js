@@ -8,6 +8,8 @@ import Cart from './components/Cart'
 import { Firestore } from './firebaseConfig'
 import CartProvider from './context/cartContext'
 import Checkout from './components/Checkout'
+import Slide1 from './components/Slide1'
+import Novedades from './components/Novedades'
 
 /*
 const data = [
@@ -244,6 +246,8 @@ useEffect(() => {
       <CartProvider>
         <BrowserRouter>
         <Header/>
+        <Slide1 />
+        <Novedades/>
         <Switch>
           <Route exact path="/">
             <ItemListContainer greeting="Listado de Productos" data={ listado } loader={ loader } />
