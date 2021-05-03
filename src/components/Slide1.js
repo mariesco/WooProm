@@ -4,6 +4,7 @@ import slide1 from '../assets/img/parallax.jpg'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import '../assets/css/slide1.css'
+import SlidePadre from './SlidePadre'
 
 const Slide1 = () => {
     const responsive = {
@@ -25,8 +26,28 @@ const Slide1 = () => {
           items: 1
         }
       };
+
+    const content = [
+      <div>
+        <img className="img-fluid" src={slide} alt=""/>
+      </div>,
+      <div>
+        <img className="img-fluid" src={slide1} alt=""/>
+      </div>,
+      <div>
+        <img className="img-fluid" src={slide} alt=""/>
+      </div>,
+      <div>
+        <img className="img-fluid" src={slide1} alt=""/>
+      </div>
+    ]
+
+    const autoPlay = true
+    const infinite = true
+    
     return (
-      <Carousel
+      <SlidePadre responsive={responsive} content={content} autoPlay={autoPlay} infinite={infinite}/>
+      /*<Carousel
       arrows={true}
       swipeable={true}
       draggable={false}
@@ -54,7 +75,7 @@ const Slide1 = () => {
         <div>
             <img src={slide1} alt=""/>
         </div>
-      </Carousel>
+      </Carousel>*/
     )
 }
 

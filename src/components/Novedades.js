@@ -5,11 +5,13 @@ import '../assets/css/novedades.css'
 
 const Novedades = () => {
     return (
-        <div className="row">
-            <div className="col-12">
-                <h1>Novedades</h1>
+        <div id="novedades" className="row">
+            <div className="col-12 titulo">
+                <div>
+                    <h1>Novedades</h1>
+                </div>
             </div>
-            <div className="col-12">
+            <div className="col-12 slide-container">
                 <SlideNovedades/>
             </div>
         </div>

@@ -1,0 +1,86 @@
+#prefooter {
+  background-color: #909599;
+  padding: 35px 50px;
+}
+
+#prefooter .col-sm-4 {
+  padding: 25px;
+  border-right: 2px solid white;
+}
+
+#prefooter .col-sm-4 a {
+  color: white;
+  padding: 5px 0;
+  text-decoration: none;
+  display: block;
+}
+
+#prefooter .col-sm-4 a img {
+  width: 30px;
+  margin-right: 15px;
+}
+
+#prefooter .col-sm-4 h1 {
+  padding: 5px 0;
+  color: white;
+  font-size: 28px;
+}
+
+#prefooter .col-sm-4 h1 img {
+  width: 30px;
+}
+
+#prefooter .escribinos {
+  border: none;
+}
+
+#prefooter .escribinos a {
+  padding: 20px 0;
+}
+
+#prefooter .escribinos .consultanos {
+  padding: 8px 50px;
+  background-color: #343434;
+  font-size: 20px;
+  border-radius: 8px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.footer {
+  position: relative !important;
+  background-color: #f2d742 !important;
+}
+
+.footer .container p {
+  color: white;
+  font-size: 18px;
+}
+
+.footer .container p a {
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 576px) {
+  #prefooter {
+    padding: 30px;
+  }
+  #prefooter .col-sm-4 {
+    padding: 15px;
+    border-right: none;
+    border-bottom: 2px solid white;
+  }
+  #prefooter .col-sm-4 h1 {
+    font-size: 24px;
+  }
+  #prefooter .escribinos {
+    border: none;
+    padding-bottom: 50px;
+  }
+  #prefooter .escribinos .consultanos {
+    padding: 8px 20px;
+  }
+}
+/*# sourceMappingURL=prefooter.css.map */

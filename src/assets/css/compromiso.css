@@ -1,0 +1,149 @@
+#compromiso {
+  padding: 50px 90px;
+  background-color: #909599;
+}
+
+#compromiso .col-sm-4 {
+  text-align: center;
+  border-right: 5px solid white;
+  padding: 10px 50px;
+}
+
+#compromiso .col-sm-4 h1 {
+  font-size: 60px;
+  color: white;
+}
+
+#compromiso .col-sm-4 .calidad {
+  font-weight: 900;
+}
+
+#compromiso .special {
+  border: none;
+}
+
+#confianza {
+  background-color: #f2d742;
+  margin: 80px 0;
+  padding: 50px;
+}
+
+#confianza .titulo {
+  border-bottom: 1px solid black;
+}
+
+#confianza .titulo h1 {
+  padding: 10px 0;
+  color: black;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+#confianza .slide-container {
+  padding: 30px 50px;
+}
+
+#confianza .slide-container div {
+  padding: 40px 5px;
+}
+
+#confianza .slide-container div img {
+  width: 125px;
+  height: 125px;
+}
+
+#marcas {
+  background-color: #343434;
+  margin: 80px 0;
+  padding: 50px;
+}
+
+#marcas .titulo {
+  border-bottom: 1px solid #f2d742;
+}
+
+#marcas .titulo h1 {
+  padding: 10px 0;
+  color: #f2d742;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+#marcas .slide-container {
+  padding: 30px 50px;
+}
+
+#marcas .slide-container div {
+  padding: 40px 25px 40px 15px;
+}
+
+#marcas .slide-container div img {
+  height: auto;
+}
+
+@media (max-width: 576px) {
+  #compromiso {
+    padding: 50px 20px;
+    background-color: #909599;
+  }
+  #compromiso .col-sm-4 {
+    text-align: center;
+    border-right: none;
+    border-bottom: 5px solid white;
+    padding: 10px;
+  }
+  #compromiso .col-sm-4 h1 {
+    font-size: 30px;
+    color: white;
+  }
+  #compromiso .col-sm-4 .calidad {
+    font-weight: 900;
+  }
+  #compromiso .special {
+    border: none;
+  }
+  #confianza {
+    background-color: #f2d742;
+    margin: 60px 0;
+    padding: 50px 20px;
+  }
+  #confianza .titulo h1 {
+    padding: 10px 0;
+    color: black;
+    font-size: 24px;
+  }
+  #confianza .slide-container {
+    padding: 30px 0px;
+  }
+  #confianza .slide-container div {
+    text-align: center;
+    padding: 40px 5px;
+  }
+  #confianza .slide-container div img {
+    width: 150px;
+    height: 150px;
+  }
+  #marcas {
+    background-color: #343434;
+    margin: 60px 0;
+    padding: 50px 20px;
+  }
+  #marcas .titulo {
+    border-bottom: 1px solid #f2d742;
+  }
+  #marcas .titulo h1 {
+    font-size: 24px;
+  }
+  #marcas .slide-container {
+    padding: 30px 0px;
+  }
+  #marcas .slide-container div {
+    text-align: center;
+    padding: 40px 0;
+  }
+  #marcas .slide-container div img {
+    width: 150px;
+    height: auto;
+  }
+}
+/*# sourceMappingURL=compromiso.css.map */

@@ -1,0 +1,105 @@
+@import "./_vars.scss";
+
+#destacados {
+  background-color: $amarillo;
+  padding: 50px;
+  .titulo {
+    border-bottom: 3px solid #333;
+    display: inline;
+    width: 100%;
+    padding: 20px 0;
+    svg {
+      margin-top: -15px;
+      color: #333;
+      margin-right: 25px;
+    }
+    p {
+      display: inline;
+      font-size: 32px;
+      color: #333;
+      font-weight: 700;
+    }
+  }
+  .slide-container {
+    .row {
+      padding: 0px 90px;
+      .col-sm-6 {
+        padding: 30px 30px 0 30px;
+        img {
+          height: 430px;
+        }
+        h1 {
+          font-size: 36px;
+          color: #333;
+          font-weight: 900;
+          padding: 15px 0;
+        }
+        p {
+          font-weight: 300;
+          color: #444;
+          font-size: 26px;
+          line-height: 29px;
+          padding: 20px 0;
+        }
+        .precio {
+          font-size: 30px;
+          font-weight: 800;
+          margin-right: 25px;
+        }
+        a {
+          color: white;
+          padding: 8px 18px;
+          background-color: #777;
+          font-size: 22px;
+          border-radius: 5px;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  #destacados {
+    padding: 50px 20px;
+    .titulo {
+      padding: 20px 0;
+      svg {
+        margin-top: -15px;
+        margin-right: 25px;
+      }
+      p {
+        font-size: 26px;
+      }
+    }
+    .slide-container {
+      .row {
+        padding: 0px 10px;
+        .col-sm-6 {
+          padding: 30px 0px 0 0px;
+          img {
+            height: 300px;
+          }
+          h1 {
+            font-size: 30px;
+            padding: 15px 0;
+          }
+          p {
+            font-size: 26px;
+            line-height: 29px;
+            padding: 20px 0;
+          }
+          .precio {
+            font-size: 26px;
+            margin-right: 25px;
+          }
+          a {
+            padding: 8px 18px;
+            background-color: #777;
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
+}

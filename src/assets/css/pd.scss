@@ -1,0 +1,97 @@
+@import "./_vars.scss";
+
+#productos-destacados {
+  padding: 50px;
+  .col-12 {
+    border-bottom: 1px solid $amarillo;
+  }
+  .col-sm-2 {
+    text-align: center;
+    .react-multi-carousel-list {
+      position: relative;
+      padding: 50px 0;
+      .react-multi-carousel-track {
+        .react-multi-carousel-item {
+          padding: 0;
+          img {
+            max-width: 100%;
+            width: 100%;
+            height: 250px;
+            margin-bottom: 15px;
+          }
+          .texto {
+            h1,
+            p {
+              font-size: 18px;
+              font-weight: 500;
+              margin: 0;
+              line-height: 20px;
+            }
+            .detalle {
+              font-weight: 900;
+            }
+          }
+        }
+      }
+      .react-multi-carousel-dot-list {
+        .react-multi-carousel-dot {
+          display: none;
+        }
+        .react-multiple-carousel__arrow {
+          background: rgba(0, 0, 0, 0.1);
+        }
+        .react-multi-carousel-dot--active {
+          button {
+            border: 2px solid $amarillo;
+            background-color: white;
+          }
+        }
+      }
+      .react-multiple-carousel__arrow--left {
+        left: -10px;
+      }
+      .react-multiple-carousel__arrow--right {
+        right: -10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  #productos-destacados {
+    padding: 50px 20px;
+    .col-sm-2 {
+      .react-multi-carousel-list {
+        position: relative;
+        .react-multi-carousel-track {
+          .react-multi-carousel-item {
+            padding: 0;
+            img {
+              max-width: 100%;
+              width: auto;
+              height: 150px;
+            }
+            .texto {
+              h1,
+              p {
+                font-size: 18px;
+                font-weight: 500;
+                margin: 0;
+                line-height: 20px;
+              }
+              .detalle {
+                font-weight: 900;
+              }
+            }
+          }
+        }
+        .react-multiple-carousel__arrow--left {
+          left: -10px;
+        }
+        .react-multiple-carousel__arrow--right {
+          right: -10px;
+        }
+      }
+    }
+  }
+}

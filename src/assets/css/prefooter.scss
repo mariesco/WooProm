@@ -1,0 +1,77 @@
+@import "./_vars.scss";
+
+#prefooter {
+  background-color: $gris;
+  padding: 35px 50px;
+  .col-sm-4 {
+    padding: 25px;
+    border-right: 2px solid white;
+    a {
+      color: white;
+      padding: 5px 0;
+      text-decoration: none;
+      display: block;
+      img {
+        width: 30px;
+        margin-right: 15px;
+      }
+    }
+    h1 {
+      padding: 5px 0;
+      color: white;
+      font-size: 28px;
+      img {
+        width: 30px;
+      }
+    }
+  }
+  .escribinos {
+    border: none;
+    a {
+      padding: 20px 0;
+    }
+    .consultanos {
+      padding: 8px 50px;
+      background-color: $grisOscuro;
+      font-size: 20px;
+      border-radius: 8px;
+      width: fit-content;
+    }
+  }
+}
+
+.footer {
+  position: relative !important;
+  background-color: $amarillo !important;
+  .container {
+    p {
+      color: white;
+      font-size: 18px;
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  #prefooter {
+    padding: 30px;
+    .col-sm-4 {
+      padding: 15px;
+      border-right: none;
+      border-bottom: 2px solid white;
+      h1 {
+        font-size: 24px;
+      }
+    }
+    .escribinos {
+      border: none;
+      padding-bottom: 50px;
+      .consultanos {
+        padding: 8px 20px;
+      }
+    }
+  }
+}
