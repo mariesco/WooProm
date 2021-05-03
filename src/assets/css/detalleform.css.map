@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "detalleform.scss",
+        "_vars.scss"
+    ],
+    "names": [],
+    "file": "detalleform.css"
+}

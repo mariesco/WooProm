@@ -1,22 +1,16 @@
-import React, {useState} from 'react'
+import React from 'react'
 import SlideItemMochilas from './SlideItemMochilas'
+import '../assets/css/destacados.css'
+import Contador from './Contador'
 
 const ItemMochilas = () => {
-
-    const [cantidad, setCantidad] = useState(0)
-    
-    
-    const aumentarCantidad = () => {
-        setCantidad(cantidad + 1)
-    }
-
-    const restarCantidad = () => {
-        setCantidad(cantidad - 1)
-    }
-
     return (
         <div id="itemmochilas" className="row">
-            <div className="col-6">
+            
+            <div className="col-12 titulo">
+                <p>Inicio / Bolsos y Mochilas / Mochilas</p>
+            </div>
+            <div className="col-6 slide-container">
                 <SlideItemMochilas/>
             </div>
             <div className="col-6 texto">
@@ -29,27 +23,26 @@ const ItemMochilas = () => {
                 sobre el sector de la espalda el bolsillo porta notebook con
                 sujetador con velcro con capacidad para introducir una
                 notebook de hasta 17&Prime.</p>
-                <p className="d-inline precio">AR$1.970,78 + iva</p>
+                <p className="d-inline precio"><b>AR$1.970,78</b>+ iva</p>
                 <p>Cantidad Mínima: 1 unidad.</p>
                 <div className="row">
                     <div className="col-4">
-                        <button onClick={restarCantidad}>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"/>
-                            </svg>
-                        </button>
-                        <span>{cantidad}</span>
-                        <button onClick={aumentarCantidad}>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-up" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M7.776 5.553a.5.5 0 0 1 .448 0l6 3a.5.5 0 1 1-.448.894L8 6.56 2.224 9.447a.5.5 0 1 1-.448-.894l6-3z"/>
-                            </svg>
-                        </button>
+                        <Contador/>
                     </div>
                     <div className="col-8">
                         <button> Agregar al carrito</button>
                     </div>
                 </div>
+                <div className="botones">                    
+                    <p>Colores disponibles:</p>
+                    <button className="grisoscuro"></button>
+                    <button className="rojo"></button>
+                    <button className="celeste"></button>
+                    <button className="grisclaro"></button>
+                    <button className="verde"></button>
+                </div>
             </div>
+            <div className="col-12 bbox"></div>
         </div>
     )
 }

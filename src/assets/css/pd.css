@@ -6,6 +6,10 @@
   border-bottom: 1px solid #f2d742;
 }
 
+#productos-destacados .col-12 div h1 {
+  color: #909599;
+}
+
 #productos-destacados .col-sm-2 {
   text-align: center;
 }

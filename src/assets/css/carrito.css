@@ -1,0 +1,99 @@
+#carrito {
+  padding: 50px;
+}
+
+#carrito .row .titulo {
+  border-bottom: 3px solid #f2d742;
+  display: inline;
+  width: 100%;
+  padding: 20px 0;
+}
+
+#carrito .row .titulo p {
+  display: inline;
+  font-size: 32px;
+  color: #909599;
+  font-weight: 700;
+}
+
+#carrito .row .lista {
+  padding: 10px 0;
+  border-bottom: 1px solid #343434;
+}
+
+#carrito .row .lista .row .col-6 .row {
+  padding: 25px 0;
+}
+
+#carrito .row .lista .row .col-6 .row .col-3 img {
+  width: 80px;
+  height: 80px;
+}
+
+#carrito .row .lista .row .col-6 .row .col-9 .modelo {
+  font-weight: 900;
+  font-size: 26px;
+  margin: 0;
+}
+
+#carrito .row .lista .row .col-6 .row .col-9 .detalle {
+  font-size: 22px;
+  font-weight: 300;
+  margin: 0;
+}
+
+#carrito .row .lista .row .count {
+  text-align: right;
+  padding: 25px 0;
+}
+
+#carrito .row .lista .row .precio {
+  text-align: right;
+  padding: 30px;
+}
+
+#carrito .row .lista .row .precio p {
+  font-weight: 900;
+  font-size: 26px;
+}
+
+#carrito .row .total {
+  text-align: right;
+  padding-top: 40px;
+}
+
+#carrito .row .total p {
+  font-weight: 900;
+  font-size: 36px;
+}
+
+#carrito .row .total button {
+  width: 100%;
+  color: #343434;
+  background-color: #f2d742;
+  border-radius: 15px;
+  font-size: 22px;
+  padding: 10px;
+  border: none;
+}
+
+#carrito .row .presupuesto {
+  padding-top: 40px;
+  text-align: right;
+}
+
+#carrito .row .presupuesto p {
+  font-weight: 900;
+  font-size: 36px;
+}
+
+#carrito .row .presupuesto button {
+  width: 100%;
+  color: white;
+  background-color: #343434;
+  border-radius: 15px;
+  font-size: 22px;
+  border: none;
+  padding: 10px;
+}
+/*# sourceMappingURL=carrito.css.map */

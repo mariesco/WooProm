@@ -12,6 +12,8 @@ import Checkout from './components/Checkout'
 import Home from './components/Home'
 import ItemRemeras from './components/ItemRemeras'
 import ItemMochilas from './components/ItemMochilas'
+import Carrito from './components/Carrito'
+import DetalleForm from './components/DetalleForm'
 
 /*
 const data = [
@@ -250,6 +252,9 @@ useEffect(() => {
         <Header/>
         <Home/>
         <ItemRemeras/>
+        <ItemMochilas/>
+        <Carrito/>
+        <DetalleForm/>
         <PreFooter/>   
         <Footer/>
       </BrowserRouter>

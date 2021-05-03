@@ -4,6 +4,11 @@
   padding: 50px;
   .col-12 {
     border-bottom: 1px solid $amarillo;
+    div {
+      h1 {
+        color: $gris;
+      }
+    }
   }
   .col-sm-2 {
     text-align: center;

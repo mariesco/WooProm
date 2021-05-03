@@ -1,6 +1,7 @@
 import React from 'react'
 import SlidePadre from './SlidePadre'
 import mochila from '../assets/img/productos/C531_perfil-247x296.jpg'
+import mochila2 from '../assets/img/productos/hl8703_00.jpg'
 
 const SlideItemMochilas = () => {
     
@@ -24,10 +25,10 @@ const SlideItemMochilas = () => {
         }
       };
 
-      const infinite = false
+      const infinite = true
       const autoPlay = false
 
-      const content = <img src={mochila} alt=""/>
+      const content = [<img src={mochila} alt=""/>, <img src={mochila2} alt=""/>] 
     return (
         <SlidePadre responsive={responsive} content={content} autoPlay={autoPlay} infinite={infinite}/>
     )
