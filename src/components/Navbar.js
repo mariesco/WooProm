@@ -31,27 +31,27 @@ function Navbar() {
                 </NavLink>
               </li>
               <li className="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                <NavLink to="/category/1" className="nav-link">
+                <NavLink to="/remera" className="nav-link">
                   FAQ
                 </NavLink>
               </li>
               <li className="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                <NavLink to="/category/2" className="nav-link">
+                <NavLink to="/mochila" className="nav-link">
                   NUESTROS TRABAJOS
                 </NavLink>
               </li>
               <li className="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                <NavLink to="/category/2" className="nav-link">
+                <NavLink to="/cart" className="nav-link">
                   DESARROLLOS ESPECIALES
                 </NavLink>
               </li>
               <li className="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                <NavLink to="/category/2" className="nav-link">
+                <NavLink to="/detalleform" className="nav-link">
                   CATÁLOGOS
                 </NavLink>
               </li>
               <li className="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                <NavLink to="/category/2" className="nav-link contacto">
+                <NavLink to="/gracias" className="nav-link contacto">
                   CONTACTO
                 </NavLink>
               </li> 

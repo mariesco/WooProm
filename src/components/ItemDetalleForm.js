@@ -9,7 +9,7 @@ const ItemDetalleForm = () => {
             </div>
             <div className="col-9">
                 <p className="modelo">C531 / Mochila "Fort"</p>
-                <p className="detalle">Precio Unitario: AR$1970.78</p>
+                <p className="detalle">xl <b>AR$1970.78</b></p>
             </div>
         </div>
     )

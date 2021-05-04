@@ -1,1 +1,192 @@
-/* No CSS *//*# sourceMappingURL=detalleform.css.map */
+#DetalleForm {
+  padding: 50px;
+}
+
+#DetalleForm .titulo {
+  border-bottom: 3px solid #f2d742;
+  display: inline;
+  width: 100%;
+  padding: 20px 0;
+}
+
+#DetalleForm .titulo p {
+  display: inline;
+  font-size: 32px;
+  color: #909599;
+  font-weight: 700;
+}
+
+#DetalleForm .detalle2 {
+  padding: 60px 0;
+}
+
+#DetalleForm .detalle2 .row {
+  padding: 5px 0;
+}
+
+#DetalleForm .detalle2 .row .col-3 img {
+  width: 80px;
+  height: 80px;
+}
+
+#DetalleForm .detalle2 .row .col-9 .modelo {
+  font-weight: 900;
+  font-size: 26px;
+  margin: 0;
+}
+
+#DetalleForm .detalle2 .row .col-9 .detalle {
+  font-size: 22px;
+  font-weight: 300;
+  margin: 0;
+}
+
+#DetalleForm .detalle2 .row .col-9 .detalle b {
+  font-weight: 900;
+}
+
+#DetalleForm .detalle2 .borde {
+  border-bottom: 3px solid #f2d742;
+  padding: 0;
+  width: 100%;
+}
+
+#DetalleForm .detalle2 .total {
+  text-align: right;
+}
+
+#DetalleForm .detalle2 .total p {
+  font-size: 32px;
+  font-weight: 900;
+}
+
+#DetalleForm .detalle2 .total p b {
+  margin-left: 25px;
+}
+
+#DetalleForm .formulario {
+  padding: 60px;
+}
+
+#DetalleForm .formulario input {
+  border: none;
+  border-bottom: 1px solid #343434;
+  width: 100%;
+  padding: 5px;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+#DetalleForm .formulario input:hover {
+  -webkit-appearance: auto;
+}
+
+#DetalleForm .formulario :-ms-input-placeholder {
+  color: #909599;
+}
+
+#DetalleForm .formulario label {
+  width: 40%;
+  color: #909599;
+}
+
+#DetalleForm .formulario label input {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#DetalleForm .formulario label input:hover {
+  border: 1px solid black;
+  -webkit-appearance: auto;
+}
+
+#DetalleForm .formulario .active input:hover {
+  border: 1px solid black;
+  -webkit-appearance: auto;
+}
+
+#DetalleForm .formulario .porque::-webkit-input-placeholder {
+  font-weight: 800;
+  color: black;
+}
+
+#DetalleForm .formulario .porque:-ms-input-placeholder {
+  font-weight: 800;
+  color: black;
+}
+
+#DetalleForm .formulario .porque::-ms-input-placeholder {
+  font-weight: 800;
+  color: black;
+}
+
+#DetalleForm .formulario .porque::placeholder {
+  font-weight: 800;
+  color: black;
+}
+
+#DetalleForm .formulario div {
+  text-align: right;
+  margin-top: 30px;
+}
+
+#DetalleForm .formulario div button {
+  width: 70%;
+  border: none;
+  background-color: #343434;
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+}
+
+#DetalleForm .formulario div button:hover {
+  opacity: 0.7;
+}
+
+#gracias {
+  padding: 50px;
+}
+
+#gracias .titulo {
+  border-bottom: 3px solid #f2d742;
+  display: inline;
+  width: 100%;
+  padding: 20px 0;
+}
+
+#gracias .titulo p {
+  display: inline;
+  font-size: 32px;
+  color: #909599;
+  font-weight: 700;
+}
+
+#gracias .agradecimiento {
+  text-align: center;
+}
+
+#gracias .agradecimiento .contenido {
+  padding: 120px 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#gracias .agradecimiento .contenido h1 {
+  font-size: 50px;
+  color: black;
+  font-weight: 900;
+}
+
+#gracias .agradecimiento .contenido p {
+  color: #343434;
+  width: 280px;
+  font-size: 24px;
+  line-height: 24px;
+  padding: 30px 10px;
+  border-bottom: 5px solid #f2d742;
+}
+/*# sourceMappingURL=detalleform.css.map */

@@ -1,5 +1,5 @@
 import React, { useEffect, useState} from 'react'
-import { BrowserRouter, Switch, Route} from 'react-router-dom'
+import { BrowserRouter, Switch, Route, Redirect} from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import { Firestore } from './firebaseConfig'
@@ -14,6 +14,7 @@ import ItemRemeras from './components/ItemRemeras'
 import ItemMochilas from './components/ItemMochilas'
 import Carrito from './components/Carrito'
 import DetalleForm from './components/DetalleForm'
+import Gracias from './components/Gracias'
 
 /*
 const data = [
@@ -250,11 +251,29 @@ useEffect(() => {
       <CartProvider>
         <BrowserRouter>
         <Header/>
-        <Home/>
-        <ItemRemeras/>
-        <ItemMochilas/>
-        <Carrito/>
-        <DetalleForm/>
+        <Switch>
+          <Route exact path="/">
+            <Home/>
+          </Route>
+          <Route exact path="/remera">
+            <ItemRemeras/>
+          </Route>
+          <Route exact path="/mochila">
+            <ItemMochilas/>
+          </Route>
+          <Route exact path="/cart">
+            <Carrito/>
+          </Route>
+          <Route exact path="/detalleform">
+            <DetalleForm/>
+          </Route>
+          <Route exact path="/gracias">
+            <Gracias/>
+          </Route>
+          <Route exact path="/*">
+            <Redirect to="/"/>
+          </Route>
+        </Switch>
         <PreFooter/>   
         <Footer/>
       </BrowserRouter>
