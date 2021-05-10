@@ -1,75 +1,70 @@
-import React, { useState, useContext } from 'react'
-import ItemCount from './ItemCount'
-import { NavLink } from 'react-router-dom'
-import { CartContext } from '../context/cartContext'
+import React from 'react'
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import { NavLink } from 'react-router-dom';
 
-
-
-function Item({id, title, stock, description, price, pictureUrl}) {
-
-    const [estado, setEstado] = useState(0)
-    const { addItem, removeItem, isInCart } = useContext(CartContext)
-
-    const onAdd = (cantidad) => {
-        setEstado(cantidad)
-        addItem(id, title, cantidad, price, pictureUrl)
-    }
-
-    const eliminarProductoCarrito = () => {
-        removeItem(id)
-        setEstado(0)
-    }    
-
+const ItemProductosDestacados = ({id, title, stock, description, price, pictureUrl, pictureUrl1, pictureUrl2}) => {
+    
+    const responsive = {
+        superLargeDesktop: {
+          // the naming can be any, depends on you.
+          breakpoint: { max: 4000, min: 3000 },
+          items: 1
+        },
+        desktop: {
+          breakpoint: { max: 3000, min: 1024 },
+          items: 1
+        },
+        tablet: {
+          breakpoint: { max: 1024, min: 464 },
+          items: 1
+        },
+        mobile: {
+          breakpoint: { max: 464, min: 0 },
+          items: 1
+        }
+      };
     return (
-        <>
-                <div className="col-6 col-sm-6 col-md-3 my-3 pb-5 text-center">
-                    <NavLink to={`/item/`+ id} >
-                        <img src={pictureUrl} className="img-fluid efecto  animate__animated animate__fadeIn" alt={description}/>
-                    </NavLink>
-                    <h5 className="card-title text-center my-0 py-0 pt-3">
-                        <NavLink to={`/item/`+ id} className="product-title" >
-                            {title}
-                        </NavLink>        
-                    </h5>
-                    <p className="card-text text-center my-0 py-0">{description}</p>
-                    <h3 className="card-text text-center mt-2"><b>${price}.-</b></h3>
-                    {/* {
-                        notif ?
-                            estado > 0 ?
-                                estado === 1  ?
-                                    <p className="mt-3 text-center p-0">Se ha agregado { estado } al carrito.</p>
-                                :
-                                    <p className="mt-3 text-center p-0">Se han agregado { estado } al carrito.</p>
-                            :
-                                ''
-                        :
-                            ''
-                    }
-                    {
-                        estado !== 0 ?
-                            <>
-                                <NavLink to="/cart" className="nav-link text-center m-0" >
-                                    <button className="btn btn-dark add" >Terminar Compra</button>
-                                </NavLink>
-                                <button className="btn btn-dark add mt-0" onClick={eliminarProductoCarrito}>Eliminar del Carro</button>
-                            </>
-                        :
-                            <ItemCount stock={stock} initial={1} onAdd={onAdd} />
-                    } */}
-                    {
-                        isInCart(id).length > 0 ?
-                            <>
-                                <NavLink to="/cart" className="nav-link text-center m-0 pt-0" >
-                                    <button className="btn btn-dark add m-0 p-0" >Terminar Compra</button>
-                                </NavLink>
-                                <button className="btn btn-dark add mt-0 p-1" onClick={eliminarProductoCarrito}>Eliminar del Carro</button>
-                            </>
-                        :
-                            <ItemCount stock={stock} initial={1} onAdd={onAdd} />
-                    }               
-                </div>
+    <>
+        <Carousel
+        arrows={true}
+        swipeable={true}
+        draggable={false}
+        showDots={true}
+        responsive={responsive}
+        ssr={true} // means to render carousel on server-side.
+        infinite={true}
+        autoPlay={false}
+        autoPlaySpeed={3000}
+        keyBoardControl={true}
+        customTransition="all 1.5"
+        transitionDuration={500}
+        containerClass="carousel-container"
+        dotListClass="custom-dot-list-style"
+        itemClass="carousel-item-padding-40-px">
+          <NavLink to={`/item/`+ id}>
+            <div>
+                <img src={pictureUrl} className="img-fluid" alt=""/>
+            </div>
+            </NavLink>
+          <NavLink to={`/item/`+ id}>
+            <div>
+                <img src={pictureUrl1} className="img-fluid" alt=""/>
+            </div>
+            </NavLink>
+          <NavLink to={`/item/`+ id}>
+            <div>
+                <img src={pictureUrl2} className="img-fluid" alt=""/>
+            </div>
+            </NavLink>
+        </Carousel>                
+            <div className="texto">
+                <h1>{title}</h1>
+                <p className="detalle">{description} </p>
+                <p>${price} + IVA</p>
+            </div>
         </>
     )
 }
 
-export default Item
+export default ItemProductosDestacados

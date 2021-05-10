@@ -3,7 +3,7 @@
 }
 
 #DetalleForm .titulo {
-  border-bottom: 3px solid #f2d742;
+  border-bottom: 3px solid #f5df4d;
   display: inline;
   width: 100%;
   padding: 20px 0;
@@ -12,7 +12,7 @@
 #DetalleForm .titulo p {
   display: inline;
   font-size: 32px;
-  color: #909599;
+  color: #939597;
   font-weight: 700;
 }
 
@@ -46,9 +46,10 @@
 }
 
 #DetalleForm .detalle2 .borde {
-  border-bottom: 3px solid #f2d742;
+  border-bottom: 3px solid #f5df4d;
   padding: 0;
   width: 100%;
+  margin-top: 30px;
 }
 
 #DetalleForm .detalle2 .total {
@@ -70,7 +71,7 @@
 
 #DetalleForm .formulario input {
   border: none;
-  border-bottom: 1px solid #343434;
+  border-bottom: 1px solid #383838;
   width: 100%;
   padding: 5px;
   font-size: 22px;
@@ -82,12 +83,12 @@
 }
 
 #DetalleForm .formulario :-ms-input-placeholder {
-  color: #909599;
+  color: #939597;
 }
 
 #DetalleForm .formulario label {
   width: 40%;
-  color: #909599;
+  color: #939597;
 }
 
 #DetalleForm .formulario label input {
@@ -97,6 +98,11 @@
 }
 
 #DetalleForm .formulario label input:hover {
+  border: 1px solid black;
+  -webkit-appearance: auto;
+}
+
+#DetalleForm .formulario label input:focus {
   border: 1px solid black;
   -webkit-appearance: auto;
 }
@@ -134,7 +140,7 @@
 #DetalleForm .formulario div button {
   width: 70%;
   border: none;
-  background-color: #343434;
+  background-color: #383838;
   padding: 15px;
   border-radius: 10px;
   color: white;
@@ -149,7 +155,7 @@
 }
 
 #gracias .titulo {
-  border-bottom: 3px solid #f2d742;
+  border-bottom: 3px solid #f5df4d;
   display: inline;
   width: 100%;
   padding: 20px 0;
@@ -158,7 +164,7 @@
 #gracias .titulo p {
   display: inline;
   font-size: 32px;
-  color: #909599;
+  color: #939597;
   font-weight: 700;
 }
 
@@ -182,11 +188,152 @@
 }
 
 #gracias .agradecimiento .contenido p {
-  color: #343434;
+  color: #383838;
   width: 280px;
   font-size: 24px;
   line-height: 24px;
   padding: 30px 10px;
-  border-bottom: 5px solid #f2d742;
+  border-bottom: 5px solid #f5df4d;
+}
+
+@media screen and (min-width: 576px) and (max-width: 1140px) {
+  #DetalleForm {
+    padding: 30px;
+  }
+  #DetalleForm .detalle2 {
+    padding: 60px 0;
+  }
+  #DetalleForm .detalle2 .row {
+    padding: 5px 0;
+  }
+  #DetalleForm .detalle2 .row .col-3 img {
+    width: 60px;
+    height: 60px;
+  }
+  #DetalleForm .detalle2 .borde {
+    margin-top: 30px;
+  }
+  #DetalleForm .formulario {
+    padding: 60px 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  #DetalleForm {
+    padding: 20px;
+  }
+  #DetalleForm .titulo {
+    border-bottom: 3px solid #f5df4d;
+    display: inline;
+    width: 100%;
+    padding: 20px 0;
+  }
+  #DetalleForm .titulo p {
+    display: inline;
+    font-size: 32px;
+    color: #939597;
+    font-weight: 700;
+  }
+  #DetalleForm .detalle2 {
+    padding: 60px 0;
+  }
+  #DetalleForm .detalle2 .row {
+    padding: 5px 0;
+  }
+  #DetalleForm .detalle2 .row .col-3 img {
+    width: 80px;
+    height: 80px;
+  }
+  #DetalleForm .detalle2 .row .col-9 .modelo {
+    font-weight: 900;
+    font-size: 26px;
+    margin: 0;
+  }
+  #DetalleForm .detalle2 .row .col-9 .detalle {
+    font-size: 22px;
+    font-weight: 300;
+    margin: 0;
+  }
+  #DetalleForm .detalle2 .row .col-9 .detalle b {
+    font-weight: 900;
+  }
+  #DetalleForm .detalle2 .borde {
+    border-bottom: 3px solid #f5df4d;
+    padding: 0;
+    width: 100%;
+  }
+  #DetalleForm .detalle2 .total {
+    text-align: right;
+  }
+  #DetalleForm .detalle2 .total p {
+    font-size: 32px;
+    font-weight: 900;
+  }
+  #DetalleForm .detalle2 .total p b {
+    margin-left: 25px;
+  }
+  #DetalleForm .formulario {
+    padding: 0px 0 50px 0;
+  }
+  #DetalleForm .formulario input {
+    border: none;
+    border-bottom: 1px solid #383838;
+    width: 100%;
+    padding: 5px;
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  #DetalleForm .formulario .porque::-webkit-input-placeholder {
+    font-weight: 800;
+    color: black;
+  }
+  #DetalleForm .formulario .porque:-ms-input-placeholder {
+    font-weight: 800;
+    color: black;
+  }
+  #DetalleForm .formulario .porque::-ms-input-placeholder {
+    font-weight: 800;
+    color: black;
+  }
+  #DetalleForm .formulario .porque::placeholder {
+    font-weight: 800;
+    color: black;
+  }
+  #DetalleForm .formulario div {
+    text-align: right;
+    margin-top: 30px;
+  }
+  #DetalleForm .formulario div button {
+    width: 70%;
+    border: none;
+    background-color: #383838;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+  }
+  #gracias {
+    padding: 50px 20px;
+  }
+  #gracias .titulo p {
+    display: inline;
+    font-size: 32px;
+    color: #939597;
+    font-weight: 700;
+  }
+  #gracias .agradecimiento {
+    text-align: center;
+  }
+  #gracias .agradecimiento .contenido {
+    padding: 100px 0;
+  }
+  #gracias .agradecimiento h1 {
+    font-size: 46px;
+  }
+  #gracias p {
+    width: 260px;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 30px 10px;
+  }
 }
 /*# sourceMappingURL=detalleform.css.map */

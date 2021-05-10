@@ -27,6 +27,30 @@
   }
 }
 
+@media screen and (min-width: 576px) and (max-width: 1140px) {
+  #envios {
+    padding: 50px;
+    .col-sm-6 {
+      padding: 0px;
+      img {
+        width: 250px;
+        height: 250px;
+      }
+      div {
+        border-bottom: 8px solid #333;
+        width: fit-content;
+        h1,
+        h2 {
+          font-size: 62px;
+        }
+      }
+    }
+    .text {
+      padding-left: 0;
+    }
+  }
+}
+
 @media (max-width: 576px) {
   #envios {
     padding: 20px;

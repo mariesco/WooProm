@@ -1,0 +1,28 @@
+#itemcount .col-lg-5 {
+  margin-bottom: 0px;
+  padding: 0;
+}
+
+#itemcount .col-lg-5 .btncontador {
+  padding: 10px 7px;
+  background-color: #f5df4d;
+  border: none;
+  border-radius: 5px;
+}
+
+#itemcount .col-lg-5 .spancontador {
+  padding: 10px 25px;
+  border-bottom: 1px solid black;
+  margin: 0 5px;
+}
+
+#itemcount .col-lg-7 button {
+  padding: 10px 0px;
+  width: 100%;
+  background-color: #383838;
+  font-size: 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=itemcount.css.map */

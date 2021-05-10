@@ -1,9 +1,10 @@
 import React from 'react'
 import SlideNovedades from './SlideNovedades'
 import '../assets/css/novedades.css'
+import { NavLink } from 'react-router-dom'
 
 
-const Novedades = () => {
+const Novedades = ({listado}) => {
     return (
         <div id="novedades" className="row">
             <div className="col-12 titulo">
@@ -12,7 +13,10 @@ const Novedades = () => {
                 </div>
             </div>
             <div className="col-12 slide-container">
-                <SlideNovedades/>
+                <SlideNovedades listado={listado} />
+            </div>
+            <div className="col-12 boton">
+                <NavLink to="/">Mirá todas las novedades {'>'}</NavLink>
             </div>
         </div>
     )

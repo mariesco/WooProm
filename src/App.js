@@ -15,6 +15,9 @@ import ItemMochilas from './components/ItemMochilas'
 import Carrito from './components/Carrito'
 import DetalleForm from './components/DetalleForm'
 import Gracias from './components/Gracias'
+import rem from '../src/assets/img/productos/remera_quina_perfil.jpg'
+import camp from '../src/assets/img/productos/chale_polar_1.jpg'
+import tazaenlozada from '../src/assets/img/productos/jarro_enlozado.jpg'
 
 /*
 const data = [
@@ -247,28 +250,175 @@ useEffect(() => {
   })
 }, [])
 */
+    const data = [
+      {
+    "id": 1,
+      "category": 1,
+      "category_name": "Mujer",
+      "title": "REMERAS",
+      "description": "Remera Cardon",
+      "price": 665.99,
+      "stock": 0,
+      "pictureUrl": `${rem}`,
+      "pictureUrl1": `${camp}`,
+      "pictureUrl2": `${tazaenlozada}`,
+    },
+    {
+    "id": 2,
+      "category": 1,
+      "category_name": "Mujer",
+      "title": "REMERAS",
+      "description": "Remera Cardon",
+      "price": 665.99,
+      "stock": 14,
+      "pictureUrl": `${rem}`,
+      "pictureUrl1": `${camp}`,
+      "pictureUrl2": `${tazaenlozada}`,
+    },
+    {
+    "id": 3,
+      "category": 1,
+      "category_name": "Mujer",
+      "title": "REMERAS",
+      "description": "Remera Cardon",
+      "price": 665.99,
+      "stock": 5,
+      "pictureUrl": `${rem}`,
+      "pictureUrl1": `${camp}`,
+      "pictureUrl2": `${tazaenlozada}`,
+    },
+    {
+    "id": 4,
+      "category": 1,
+      "category_name": "Mujer",
+      "title": "REMERAS",
+      "description": "Remera Cardon",
+      "price": 665.99,
+      "stock": 2,
+      "pictureUrl": `${rem}`,
+      "pictureUrl1": `${camp}`,
+      "pictureUrl2": `${tazaenlozada}`,
+    },
+    {
+    "id": 5,
+      "category": 1,
+      "category_name": "Mujer",
+      "title": "REMERAS",
+      "description": "Remera Cardon",
+      "price": 665.99,
+      "stock": 14,
+      "pictureUrl": `${rem}`,
+      "pictureUrl1": `${camp}`,
+      "pictureUrl2": `${tazaenlozada}`,
+    },
+    {
+    "id": 6,
+      "category": 1,
+      "category_name": "Mujer",
+      "title": "REMERAS",
+      "description": "Remera Cardon",
+      "price": 665.99,
+      "stock": 5,
+      "pictureUrl": `${rem}`,
+      "pictureUrl1": `${camp}`,
+      "pictureUrl2": `${tazaenlozada}`,
+    },
+    {
+    "id": 7,
+      "category": 1,
+      "category_name": "Mujer",
+      "title": "REMERAS",
+      "description": "Remera Cardon",
+      "price": 665.99,
+      "stock": 2,
+      "pictureUrl": `${rem}`,
+      "pictureUrl1": `${camp}`,
+      "pictureUrl2": `${tazaenlozada}`,
+    },
+    {
+    "id": 8,
+      "category": 1,
+      "category_name": "Mujer",
+      "title": "REMERAS",
+      "description": "Remera Cardon",
+      "price": 665.99,
+      "stock": 14,
+      "pictureUrl": `${rem}`,
+      "pictureUrl1": `${camp}`,
+      "pictureUrl2": `${tazaenlozada}`,
+    },
+    {
+    "id": 9,
+      "category": 1,
+      "category_name": "Mujer",
+      "title": "REMERAS",
+      "description": "Remera Cardon",
+      "price": 665.99,
+      "stock": 5,
+      "pictureUrl": `${rem}`,
+      "pictureUrl1": `${camp}`,
+      "pictureUrl2": `${tazaenlozada}`,
+    },
+    {
+    "id": 10,
+      "category": 2,
+      "category_name": "Hombre",
+      "title": "REMERAS",
+      "description": "Remera Cardon",
+      "price": 665.99,
+      "stock": 2,
+      "pictureUrl": `${rem}`,
+      "pictureUrl1": `${camp}`,
+      "pictureUrl2": `${tazaenlozada}`,
+    },
+    {
+    "id": 11,
+      "category": 2,
+      "category_name": "Hombre",
+      "title": "REMERAS",
+      "description": "Remera Cardon",
+      "price": 665.99,
+      "stock": 14,
+      "pictureUrl": `${rem}`,
+      "pictureUrl1": `${camp}`,
+      "pictureUrl2": `${tazaenlozada}`,
+    },
+    {
+    "id": 12,
+      "category": 2,
+      "category_name": "Hombre",
+      "title": "REMERAS",
+      "description": "Remera Cardon",
+      "price": 665.99,
+      "stock": 5,
+      "pictureUrl": `${rem}`,
+      "pictureUrl1": `${camp}`,
+      "pictureUrl2": `${tazaenlozada}`,
+    }
+    ];
+
   return (
       <CartProvider>
         <BrowserRouter>
         <Header/>
         <Switch>
           <Route exact path="/">
-            <Home/>
+            <Home listado={data} />
           </Route>
           <Route exact path="/remera">
-            <ItemRemeras/>
+            <ItemRemeras listado={data} />
           </Route>
-          <Route exact path="/mochila">
-            <ItemMochilas/>
+          <Route exact path="/item/:id">
+            <ItemMochilas listado={data} />
           </Route>
           <Route exact path="/cart">
-            <Carrito/>
-          </Route>
-          <Route exact path="/detalleform">
-            <DetalleForm/>
+            <Carrito listado={data} />
           </Route>
           <Route exact path="/gracias">
             <Gracias/>
+          </Route>
+          <Route exact path="/checkout">
+            <DetalleForm greeting="Finalizando tu Compra"/>
           </Route>
           <Route exact path="/*">
             <Redirect to="/"/>

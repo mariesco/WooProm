@@ -43,7 +43,7 @@ const SlideDestacados = () => {
           sobre el sector de la espalda el bolsillo porta notebook con
           sujetador con velcro con capacidad para introducir una
           notebook de hasta 17&Prime.</p>
-          <p className="d-inline precio">AR$1.970,78</p>
+          <p className="d-inline precio">$1.970,78</p>
           <NavLink to="/">Ver producto</NavLink>
         </div>]
         

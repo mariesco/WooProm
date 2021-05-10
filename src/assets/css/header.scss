@@ -19,13 +19,17 @@
     div {
       display: flex;
       position: absolute;
-      right: 25px;
+      right: 65px;
       .redes {
         padding: 5px 0;
-        width: 60px;
+        margin: 0 7px;
+        width: 30px;
         .nav-link {
           padding: 0;
           border: none;
+          img {
+            max-width: 100%;
+          }
         }
       }
       .redes1 {
@@ -91,8 +95,83 @@
   .carro {
     padding: 30px;
     text-align: right;
-    img {
-      width: 50px;
+    a {
+      img {
+        width: 50px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 1140px) {
+  .navbar {
+    .navbar-nav {
+      margin-left: 0px;
+      .nav-item {
+        padding: 8px 0px;
+        .nav-link {
+          padding: 0px 10px;
+        }
+      }
+      div {
+        display: flex;
+        position: absolute;
+        right: 15px;
+        .redes {
+          padding: 5px 0;
+          width: 45px;
+          .nav-link {
+            padding: 0;
+            border: none;
+          }
+        }
+        .redes1 {
+          margin-left: 260px;
+        }
+      }
+    }
+  }
+
+  #header2 {
+    padding: 0px 40px;
+    background-color: $gris;
+    width: 100%;
+    margin: 0;
+    .col-sm-3 {
+      padding: 40px 5px;
+    }
+    .col-sm-5 {
+      padding: 36px;
+      padding-bottom: 0;
+      form {
+        text-align: right;
+        input {
+          border: none;
+          border-radius: 15px;
+        }
+        :-ms-input-placeholder {
+          color: $gris;
+        }
+        .buscar {
+          position: relative;
+          top: -34px;
+          margin-left: -70px;
+          background-color: $amarillo;
+          border-top-right-radius: 15px;
+          border-bottom-right-radius: 15px;
+          border: none;
+          padding: 4px 15px;
+          svg {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+    .carro {
+      padding: 35px 10px;
+      img {
+        width: 50px;
+      }
     }
   }
 }
@@ -113,8 +192,10 @@
         }
       }
       div {
+        position: relative;
         margin-left: auto;
         margin-right: auto;
+        width: fit-content;
         .redes {
           margin: 20px 0;
           padding: 5px 0;
@@ -125,7 +206,7 @@
           }
         }
         .redes1 {
-          margin-left: 0px;
+          margin-left: 45px;
         }
       }
     }

@@ -1,31 +1,32 @@
 #compromiso {
-  padding: 50px 90px;
-  background-color: #909599;
+  padding: 50px 40px;
+  background-color: #f5df4d;
 }
 
 #compromiso .col-sm-4 {
   text-align: center;
-  border-right: 5px solid white;
   padding: 10px 50px;
 }
 
+#compromiso .col-sm-4 img {
+  width: 120px;
+  height: 120px;
+  padding: 20px;
+}
+
 #compromiso .col-sm-4 h1 {
-  font-size: 60px;
+  font-size: 24px;
   color: white;
 }
 
-#compromiso .col-sm-4 .calidad {
-  font-weight: 900;
-}
-
-#compromiso .special {
-  border: none;
+#compromiso .col-sm-4 p {
+  color: white;
 }
 
 #confianza {
-  background-color: #f2d742;
+  background-color: #cccccc;
   margin: 80px 0;
-  padding: 50px;
+  padding: 25px 50px;
 }
 
 #confianza .titulo {
@@ -34,13 +35,38 @@
 
 #confianza .titulo h1 {
   padding: 10px 0;
-  color: black;
+  color: #282828;
   font-size: 36px;
   font-weight: 700;
 }
 
 #confianza .slide-container {
-  padding: 30px 50px;
+  padding: 0px 50px;
+}
+
+#confianza .slide-container .react-multi-carousel-list {
+  overflow: hidden;
+}
+
+#confianza .slide-container .react-multi-carousel-list .react-multiple-carousel__arrow {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+#confianza .slide-container .react-multi-carousel-list .react-multiple-carousel__arrow--right {
+  right: -12px;
+}
+
+#confianza .slide-container .react-multi-carousel-list .react-multiple-carousel__arrow--left {
+  left: -12px;
+}
+
+#confianza .slide-container .react-multi-carousel-list .react-multi-carousel-dot-list .react-multi-carousel-dot button {
+  background-color: #383838;
+}
+
+#confianza .slide-container .react-multi-carousel-list .react-multi-carousel-dot-list .react-multi-carousel-dot--active button {
+  border: 2px solid #f5df4d;
+  background-color: #cccccc;
 }
 
 #confianza .slide-container div {
@@ -53,20 +79,18 @@
 }
 
 #marcas {
-  background-color: #343434;
   margin: 80px 0;
   padding: 50px;
 }
 
 #marcas .titulo {
-  border-bottom: 1px solid #f2d742;
+  border-bottom: 1px solid #f5df4d;
 }
 
 #marcas .titulo h1 {
   padding: 10px 0;
-  color: #f2d742;
-  font-size: 36px;
-  font-weight: 700;
+  color: #f5df4d;
+  font-size: 34px;
 }
 
 #marcas .slide-container {
@@ -74,36 +98,32 @@
 }
 
 #marcas .slide-container div {
-  padding: 40px 25px 40px 15px;
+  padding: 20px 25px 40px 15px;
 }
 
 #marcas .slide-container div img {
   height: auto;
 }
 
-@media (max-width: 576px) {
+@media screen and (min-width: 576px) and (max-width: 1140px) {
   #compromiso {
     padding: 50px 20px;
-    background-color: #909599;
   }
   #compromiso .col-sm-4 {
     text-align: center;
-    border-right: none;
-    border-bottom: 5px solid white;
+    padding: 10px 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  #compromiso {
+    padding: 50px 20px;
+  }
+  #compromiso .col-sm-4 {
     padding: 10px;
   }
-  #compromiso .col-sm-4 h1 {
-    font-size: 30px;
-    color: white;
-  }
-  #compromiso .col-sm-4 .calidad {
-    font-weight: 900;
-  }
-  #compromiso .special {
-    border: none;
-  }
   #confianza {
-    background-color: #f2d742;
+    background-color: #f5df4d;
     margin: 60px 0;
     padding: 50px 20px;
   }
@@ -124,12 +144,12 @@
     height: 150px;
   }
   #marcas {
-    background-color: #343434;
+    background-color: #383838;
     margin: 60px 0;
     padding: 50px 20px;
   }
   #marcas .titulo {
-    border-bottom: 1px solid #f2d742;
+    border-bottom: 1px solid #f5df4d;
   }
   #marcas .titulo h1 {
     font-size: 24px;

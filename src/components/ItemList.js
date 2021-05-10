@@ -1,6 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import Item from './Item'
+import Item2 from './Item2'
 
 function ItemList({ listado, loader }) {
 
@@ -27,7 +27,7 @@ function ItemList({ listado, loader }) {
                 {
                     
                     listado.map(a => {
-                        return <Item key={a.id} id={a.id} title={a.title} description={a.description} price={a.price} stock={a.stock} pictureUrl={a.pictureUrl} />
+                        return <Item2 key={a.id} id={a.id} title={a.title} description={a.description} price={a.price} stock={a.stock} pictureUrl={a.pictureUrl} />
                     })
                     
                 }

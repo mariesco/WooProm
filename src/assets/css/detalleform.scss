@@ -44,6 +44,7 @@
       border-bottom: 3px solid $amarillo;
       padding: 0;
       width: 100%;
+      margin-top: 30px;
     }
     .total {
       text-align: right;
@@ -79,6 +80,11 @@
         width: fit-content;
       }
       input:hover {
+        border: 1px solid black;
+        -webkit-appearance: auto;
+      }
+
+      input:focus {
         border: 1px solid black;
         -webkit-appearance: auto;
       }
@@ -145,6 +151,143 @@
         padding: 30px 10px;
         border-bottom: 5px solid $amarillo;
       }
+    }
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 1140px) {
+  #DetalleForm {
+    padding: 30px;
+    .detalle2 {
+      padding: 60px 0;
+      .row {
+        padding: 5px 0;
+        .col-3 {
+          img {
+            width: 60px;
+            height: 60px;
+          }
+        }
+      }
+      .borde {
+        margin-top: 30px;
+      }
+    }
+    .formulario {
+      padding: 60px 30px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  #DetalleForm {
+    padding: 20px;
+    .titulo {
+      border-bottom: 3px solid $amarillo;
+      display: inline;
+      width: 100%;
+      padding: 20px 0;
+      p {
+        display: inline;
+        font-size: 32px;
+        color: $gris;
+        font-weight: 700;
+      }
+    }
+    .detalle2 {
+      padding: 60px 0;
+      .row {
+        padding: 5px 0;
+        .col-3 {
+          img {
+            width: 80px;
+            height: 80px;
+          }
+        }
+        .col-9 {
+          .modelo {
+            font-weight: 900;
+            font-size: 26px;
+            margin: 0;
+          }
+          .detalle {
+            font-size: 22px;
+            font-weight: 300;
+            margin: 0;
+            b {
+              font-weight: 900;
+            }
+          }
+        }
+      }
+      .borde {
+        border-bottom: 3px solid $amarillo;
+        padding: 0;
+        width: 100%;
+      }
+      .total {
+        text-align: right;
+        p {
+          font-size: 32px;
+          font-weight: 900;
+          b {
+            margin-left: 25px;
+          }
+        }
+      }
+    }
+    .formulario {
+      padding: 0px 0 50px 0;
+      input {
+        border: none;
+        border-bottom: 1px solid $grisOscuro;
+        width: 100%;
+        padding: 5px;
+        font-size: 22px;
+        margin-bottom: 15px;
+      }
+      .porque::placeholder {
+        font-weight: 800;
+        color: black;
+      }
+      div {
+        text-align: right;
+        margin-top: 30px;
+        button {
+          width: 70%;
+          border: none;
+          background-color: $grisOscuro;
+          padding: 15px;
+          border-radius: 10px;
+          color: white;
+        }
+      }
+    }
+  }
+  #gracias {
+    padding: 50px 20px;
+    .titulo {
+      p {
+        display: inline;
+        font-size: 32px;
+        color: $gris;
+        font-weight: 700;
+      }
+    }
+    .agradecimiento {
+      text-align: center;
+      .contenido {
+        padding: 100px 0;
+      }
+      h1 {
+        font-size: 46px;
+      }
+    }
+    p {
+      width: 260px;
+      font-size: 20px;
+      line-height: 24px;
+      padding: 30px 10px;
     }
   }
 }

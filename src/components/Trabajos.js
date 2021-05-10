@@ -31,7 +31,7 @@ const Trabajos = () => {
             </div>
             <div className="col-sm-1"></div>
             <div className="col-12 link">
-                <NavLink to="/">Ver Producto</NavLink>
+                <NavLink to="/">VER MÁS</NavLink>
             </div>
         </div>
     )

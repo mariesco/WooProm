@@ -3,12 +3,12 @@
 }
 
 #trabajos .titulo div {
-  border-bottom: 1px solid #f2d742;
+  border-bottom: 1px solid #f5df4d;
 }
 
 #trabajos .titulo div h1 {
   font-size: 36px;
-  color: #909599;
+  color: #939597;
   padding: 15px 0;
 }
 
@@ -23,7 +23,7 @@
 
 #trabajos .link a {
   padding: 10px 80px;
-  background-color: #f2d742;
+  background-color: #f5df4d;
   border-radius: 8px;
   font-size: 22px;
   color: black;

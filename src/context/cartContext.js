@@ -19,10 +19,39 @@ const CartProvider = (props) => {
         }
     );
 
-    const addItem = (item, title, quantity, price, pictureUrl) => {        
+    useEffect(()=> {
+        console.log(carro)
+    }, [carro])
+
+    const addItem = (item, title, quantity, price, pictureUrl) => {      
+        console.log(isInCart(item).length)  
         if(isInCart(item).length === 0) {
             setCarro([...carro, { id: item, title: title, quantity: quantity, precio: price, pictureUrl: pictureUrl, total: (price*quantity) }])
             setCarroFinal([...carroFinal, { id: item, title: title, quantity: quantity, precio: price, total: (price*quantity) }])
+        }else{
+            let un = carro.filter(
+                (a) =>
+                  a.id === item 
+              );
+              //console.log(un);
+        
+              let prueba = carro.findIndex(
+                (a) =>
+                  a.id === item 
+              );
+        
+              let newCarro = [...carro];
+        
+              newCarro[prueba] = {
+                ...newCarro[prueba],
+                quantity: un[0].quantity + quantity,
+                total: (
+                  (parseFloat(price)) *
+                  parseFloat(quantity)
+                ).toFixed(2),
+              };
+        
+              setCarro(newCarro);
         }
         notify('Producto Agregado')
         setUnidadesCarro(unidadesCarro + quantity)

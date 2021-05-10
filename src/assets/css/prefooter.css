@@ -1,5 +1,5 @@
 #prefooter {
-  background-color: #909599;
+  background-color: #939597;
   padding: 35px 50px;
 }
 
@@ -40,7 +40,7 @@
 
 #prefooter .escribinos .consultanos {
   padding: 8px 50px;
-  background-color: #343434;
+  background-color: #383838;
   font-size: 20px;
   border-radius: 8px;
   width: -webkit-fit-content;
@@ -50,7 +50,7 @@
 
 .footer {
   position: relative !important;
-  background-color: #f2d742 !important;
+  background-color: #f5df4d !important;
 }
 
 .footer .container p {

@@ -1,40 +1,67 @@
 @import "./_vars.scss";
 
 #compromiso {
-  padding: 50px 90px;
-  background-color: $gris;
+  padding: 50px 40px;
+  background-color: $amarillo;
   .col-sm-4 {
     text-align: center;
-    border-right: 5px solid white;
     padding: 10px 50px;
+    img {
+      width: 120px;
+      height: 120px;
+      padding: 20px;
+    }
     h1 {
-      font-size: 60px;
+      font-size: 24px;
       color: white;
     }
-    .calidad {
-      font-weight: 900;
+    p {
+      color: white;
     }
-  }
-  .special {
-    border: none;
   }
 }
 
 #confianza {
-  background-color: $amarillo;
+  background-color: $grisClaro;
   margin: 80px 0;
-  padding: 50px;
+  padding: 25px 50px;
   .titulo {
     border-bottom: 1px solid black;
     h1 {
       padding: 10px 0;
-      color: black;
+      color: $grisOscuro2;
       font-size: 36px;
       font-weight: 700;
     }
   }
   .slide-container {
-    padding: 30px 50px;
+    padding: 0px 50px;
+    .react-multi-carousel-list {
+      overflow: hidden;
+      .react-multiple-carousel__arrow {
+        background: rgba(0, 0, 0, 0.3);
+      }
+      .react-multiple-carousel__arrow--right {
+        right: -12px;
+      }
+      .react-multiple-carousel__arrow--left {
+        left: -12px;
+      }
+      .react-multi-carousel-dot-list {
+        .react-multi-carousel-dot {
+          button {
+            background-color: $grisOscuro;
+          }
+        }
+        .react-multi-carousel-dot--active {
+          button {
+            border: 2px solid $amarillo;
+            background-color: $grisClaro;
+          }
+        }
+      }
+    }
+
     div {
       padding: 40px 5px;
       img {
@@ -46,7 +73,6 @@
 }
 
 #marcas {
-  background-color: $grisOscuro;
   margin: 80px 0;
   padding: 50px;
   .titulo {
@@ -54,14 +80,13 @@
     h1 {
       padding: 10px 0;
       color: $amarillo;
-      font-size: 36px;
-      font-weight: 700;
+      font-size: 34px;
     }
   }
   .slide-container {
     padding: 30px 50px;
     div {
-      padding: 40px 25px 40px 15px;
+      padding: 20px 25px 40px 15px;
       img {
         height: auto;
       }
@@ -69,25 +94,21 @@
   }
 }
 
+@media screen and (min-width: 576px) and (max-width: 1140px) {
+  #compromiso {
+    padding: 50px 20px;
+    .col-sm-4 {
+      text-align: center;
+      padding: 10px 30px;
+    }
+  }
+}
+
 @media (max-width: 576px) {
   #compromiso {
     padding: 50px 20px;
-    background-color: $gris;
     .col-sm-4 {
-      text-align: center;
-      border-right: none;
-      border-bottom: 5px solid white;
       padding: 10px;
-      h1 {
-        font-size: 30px;
-        color: white;
-      }
-      .calidad {
-        font-weight: 900;
-      }
-    }
-    .special {
-      border: none;
     }
   }
 

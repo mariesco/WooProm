@@ -5,8 +5,9 @@ import remera from '../assets/img/productos/remera_quina_perfil.jpg'
 import campera from '../assets/img/productos/chale_polar_1.jpg'
 import taza from '../assets/img/productos/jarro_enlozado.jpg'
 import SlidePadre from './SlidePadre'
+import ItemNovedades from './ItemNovedades';
 
-const SlideNovedades = () => {
+const SlideNovedades = ({listado}) => {
     const responsive = {
         superLargeDesktop: {
           // the naming can be any, depends on you.
@@ -27,34 +28,13 @@ const SlideNovedades = () => {
         mobile: {
           breakpoint: { max: 464, min: 0 },
           items: 1,
-          slidesToSlide: 3
+          slidesToSlide: 1
         }
       };
       const content =[
-        <div>
-            <img className="img-fluid" src={remera} alt=""/>
-            <NavLink to="/">Ver Producto</NavLink>
-        </div>,
-        <div>
-            <img className="img-fluid" src={campera} alt=""/>
-            <NavLink to="/">Ver Producto</NavLink>
-        </div>,
-        <div>
-            <img className="img-fluid" src={taza} alt=""/>
-            <NavLink to="/">Ver Producto</NavLink>
-        </div>,
-        <div>
-            <img className="img-fluid" src={remera} alt=""/>
-            <NavLink to="/">Ver Producto</NavLink>
-        </div>,
-        <div>
-            <img className="img-fluid" src={campera} alt=""/>
-            <NavLink to="/">Ver Producto</NavLink>
-        </div>,
-        <div>
-            <img className="img-fluid" src={taza} alt=""/>
-            <NavLink to="/">Ver Producto</NavLink>
-        </div>]
+          listado.map(a => {
+            return <ItemNovedades  key={a.id} id={a.id} pictureUrl={a.pictureUrl}  />
+          })]
 
         const infinite = true
         const autoPlay = true

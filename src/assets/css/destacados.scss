@@ -1,7 +1,6 @@
 @import "./_vars.scss";
 
 #destacados {
-  background-color: $amarillo;
   padding: 50px;
   .titulo {
     border-bottom: 3px solid #333;
@@ -21,6 +20,32 @@
     }
   }
   .slide-container {
+    overflow: hidden;
+    .react-multi-carousel-list {
+      overflow: initial;
+      .react-multiple-carousel__arrow {
+        background: rgba(0, 0, 0, 0.3);
+      }
+      .react-multiple-carousel__arrow--right {
+        right: -12px;
+      }
+      .react-multiple-carousel__arrow--left {
+        left: -12px;
+      }
+      .react-multi-carousel-dot-list {
+        .react-multi-carousel-dot {
+          button {
+            background-color: $grisOscuro;
+          }
+        }
+        .react-multi-carousel-dot--active {
+          button {
+            border: 2px solid $amarillo;
+            background-color: $grisClaro;
+          }
+        }
+      }
+    }
     .row {
       padding: 0px 90px;
       .col-sm-6 {
@@ -78,7 +103,21 @@
     text-align: center;
     padding: 40px 0;
     img {
-      height: 350px;
+      height: 450px;
+    }
+    .image-gallery {
+      .image-gallery-content {
+        .image-gallery-thumbnails-container {
+          button {
+            width: 150px;
+            .image-gallery-thumbnail-inner {
+              .image-gallery-thumbnail-image {
+                height: auto;
+              }
+            }
+          }
+        }
+      }
     }
   }
   .texto {
@@ -103,9 +142,10 @@
       }
     }
     .row {
-      .col-4 {
+      .col-lg-4 {
+        margin-bottom: 20px;
       }
-      .col-8 {
+      .col-lg-8 {
         button {
           padding: 10px 35px;
           width: 100%;
@@ -155,16 +195,111 @@
   }
 }
 
-.btncontador {
-  padding: 10px 7px;
-  background-color: $amarillo;
-  border: none;
-  border-radius: 5px;
-}
-.spancontador {
-  padding: 10px 25px;
-  border-bottom: 1px solid black;
-  margin: 0 5px;
+@media screen and (min-width: 576px) and (max-width: 1140px) {
+  #destacados {
+    padding: 30px;
+    .slide-container {
+      .row {
+        padding: 0px 30px;
+        .col-sm-6 {
+          padding: 30px 15px 0 15px;
+          img {
+            height: 430px;
+          }
+          h1 {
+            padding: 5px 0;
+            margin: 0;
+          }
+          p {
+            font-weight: 300;
+            color: #444;
+            font-size: 24px;
+            line-height: 27px;
+            padding: 15px 0;
+          }
+          .precio {
+            font-size: 30px;
+            font-weight: 800;
+            margin-right: 25px;
+          }
+          a {
+            color: white;
+            padding: 8px 18px;
+            background-color: #777;
+            font-size: 22px;
+            border-radius: 5px;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  #itemmochilas {
+    padding: 30px;
+    .texto {
+      h1 {
+        font-size: 32px;
+        color: #333;
+        font-weight: 900;
+        padding: 15px 0;
+      }
+      p {
+        font-size: 22px;
+        line-height: 26px;
+      }
+      .precio {
+        b {
+          font-size: 26px;
+          margin-right: 25px;
+        }
+      }
+      .row {
+        .col-lg-4 {
+          margin-bottom: 20px;
+        }
+        .col-lg-8 {
+          button {
+            padding: 10px;
+          }
+        }
+      }
+      .botones {
+        p {
+          font-weight: 300;
+          color: #444;
+          font-size: 22px;
+          line-height: 24px;
+          padding: 20px 0;
+        }
+        button {
+          width: 30px;
+          height: 30px;
+          margin: 5px;
+          border-radius: 5px;
+          border: none;
+        }
+        .grisoscuro {
+          background-color: $grisOscuro;
+        }
+        .rojo {
+          background-color: red;
+        }
+        .celeste {
+          background-color: royalblue;
+        }
+        .grisclaro {
+          background-color: $gris;
+        }
+        .verde {
+          background-color: green;
+        }
+      }
+    }
+    .bbox {
+      border-bottom: 3px solid $amarillo;
+      margin-top: 30px;
+    }
+  }
 }
 
 @media (max-width: 576px) {

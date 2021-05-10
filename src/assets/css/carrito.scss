@@ -19,16 +19,16 @@
       padding: 10px 0;
       border-bottom: 1px solid $grisOscuro;
       .row {
-        .col-6 {
+        .col-sm-6 {
           .row {
             padding: 25px 0;
-            .col-3 {
+            .col-sm-3 {
               img {
                 width: 80px;
                 height: 80px;
               }
             }
-            .col-9 {
+            .col-sm-9 {
               .modelo {
                 font-weight: 900;
                 font-size: 26px;
@@ -44,11 +44,11 @@
         }
         .count {
           text-align: right;
-          padding: 25px 0;
+          padding: 40px 0;
         }
         .precio {
           text-align: right;
-          padding: 30px;
+          padding: 40px;
           p {
             font-weight: 900;
             font-size: 26px;
@@ -64,6 +64,7 @@
         font-size: 36px;
       }
       button {
+        margin-top: 55px;
         width: 100%;
         color: $grisOscuro;
         background-color: $amarillo;
@@ -80,14 +81,112 @@
         font-weight: 900;
         font-size: 36px;
       }
-      button {
+      a {
         width: 100%;
         color: white;
+        text-decoration: none;
         background-color: $grisOscuro;
         border-radius: 15px;
         font-size: 22px;
         border: none;
         padding: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  #carrito {
+    padding: 20px;
+    .row {
+      .titulo {
+        border-bottom: 3px solid $amarillo;
+        display: inline;
+        width: 100%;
+        padding: 20px 0;
+        p {
+          display: inline;
+          font-size: 32px;
+          color: $gris;
+          font-weight: 700;
+        }
+      }
+      .lista {
+        padding: 10px 0;
+        border-bottom: 1px solid $grisOscuro;
+        .row {
+          .col-sm-6 {
+            .row {
+              padding: 25px 0;
+              .col-sm-3 {
+                img {
+                  width: 80px;
+                  height: 80px;
+                }
+              }
+              .col-sm-9 {
+                .modelo {
+                  font-weight: 900;
+                  font-size: 26px;
+                  margin: 0;
+                }
+                .detalle {
+                  font-size: 22px;
+                  font-weight: 300;
+                  margin: 0;
+                }
+              }
+            }
+          }
+          .count {
+            text-align: right;
+            padding: 25px 0;
+          }
+          .precio {
+            text-align: right;
+            padding: 30px;
+            p {
+              font-weight: 900;
+              font-size: 26px;
+            }
+          }
+        }
+      }
+      .total {
+        text-align: right;
+        padding-top: 40px;
+        p {
+          font-weight: 900;
+          font-size: 36px;
+        }
+        button {
+          margin-top: 0px;
+          width: 100%;
+          color: $grisOscuro;
+          background-color: $amarillo;
+          border-radius: 15px;
+          font-size: 22px;
+          padding: 10px;
+          border: none;
+          margin-bottom: 50px;
+        }
+      }
+      .presupuesto {
+        padding-top: 40px;
+        text-align: right;
+        p {
+          font-weight: 900;
+          font-size: 36px;
+        }
+        button {
+          width: 100%;
+          color: white;
+          background-color: $grisOscuro;
+          border-radius: 15px;
+          font-size: 22px;
+          border: none;
+          padding: 10px;
+        }
       }
     }
   }

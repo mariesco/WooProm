@@ -14,8 +14,11 @@
     }
   }
   .slide-container {
+    width: 100%;
+    overflow: hidden;
     .react-multi-carousel-list {
       padding: 50px 0;
+      overflow: initial;
       .react-multi-carousel-track {
         .react-multi-carousel-item {
           padding: 25px;
@@ -40,15 +43,22 @@
           }
         }
       }
+      .react-multiple-carousel__arrow {
+        background: rgba(0, 0, 0, 0.3);
+      }
+      .react-multiple-carousel__arrow--right {
+        right: -12px;
+      }
+      .react-multiple-carousel__arrow--left {
+        left: -12px;
+      }
       .react-multi-carousel-dot-list {
+        display: none;
         .react-multi-carousel-dot {
           button {
             width: 20px;
             height: 20px;
           }
-        }
-        .react-multiple-carousel__arrow {
-          background: rgba(0, 0, 0, 0.1);
         }
         .react-multi-carousel-dot--active {
           button {
@@ -57,6 +67,15 @@
           }
         }
       }
+    }
+  }
+  .boton {
+    text-align: center;
+    a {
+      color: $gris;
+      border-bottom: 1px solid $grisOscuro;
+      text-decoration: none;
+      font-size: 20px;
     }
   }
 }

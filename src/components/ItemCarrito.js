@@ -1,27 +1,38 @@
-import React from 'react'
-import Contador from './Contador'
+import React, {useState, useContext} from 'react'
+import ItemCount from './ItemCount'
+import { CartContext } from '../context/cartContext'
 import mochila from '../assets/img/productos/C531_perfil-247x296.jpg'
 
-const ItemCarrito = () => {
+const ItemCarrito = ({id, title, stock, description, price, pictureUrl, total, cantidad}) => {
+    console.log(price)
+    const { addItem, removeItem, isInCart } = useContext(CartContext)
+    
+    const [estado, setEstado] = useState(0)
+
+    const onAdd = (cantidad) => {
+        setEstado(cantidad)
+        addItem(id, title, cantidad, price, pictureUrl, total)
+    }
+
     return (
         <div className="col-12 lista">
             <div className="row">
-            <div className="col-6">
+            <div className="col-sm-6">
                 <div className="row">
-                    <div className="col-3">
-                        <img src={mochila} alt=""/>
+                    <div className="col-5 col-sm-3">
+                        <img src={pictureUrl} alt=""/>
                     </div>
-                    <div className="col-9">
-                        <p className="modelo">C531 / Mochila "Fort"</p>
-                        <p className="detalle">Precio Unitario: AR$1970.78</p>
+                    <div className="col-7 col-sm-9">
+                        <p className="modelo">{title}</p>
+                        <p className="detalle">Precio Unitario: ${price} </p>
                     </div>
                 </div>
             </div>
-            <div className="col-3 count">
-                <Contador/>
+            <div className="col-6 col-sm-3 count">
+                <p>x {cantidad} </p>
             </div>
-            <div className="col-3 precio">
-                <p>$1.970,78</p>
+            <div className="col-6 col-sm-3 precio">
+                <p>${total}</p>
             </div>
             </div>
         </div>

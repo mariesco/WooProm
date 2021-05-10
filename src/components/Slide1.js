@@ -1,7 +1,6 @@
 import React from 'react'
-import slide from '../assets/img/MenuDesktop.jpg'
-import slide1 from '../assets/img/parallax.jpg'
-import Carousel from "react-multi-carousel";
+import slide from '../assets/img/indumentaria.png'
+import slide1 from '../assets/img/pampero.png'
 import "react-multi-carousel/lib/styles.css";
 import '../assets/css/slide1.css'
 import SlidePadre from './SlidePadre'

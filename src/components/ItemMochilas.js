@@ -1,48 +1,26 @@
-import React from 'react'
-import SlideItemMochilas from './SlideItemMochilas'
+import React, {useState, useContext} from 'react'
+import {useParams} from 'react-router-dom'
 import '../assets/css/destacados.css'
-import Contador from './Contador'
+import rem from '../assets/img/productos/remera_quina_perfil.jpg'
+import camp from '../assets/img/productos/chale_polar_1.jpg'
+import tazaenlozada from '../assets/img/productos/jarro_enlozado.jpg'
+import ItemMochilaDetalle from './ItemMochilaDetalle'
 
-const ItemMochilas = () => {
+const ItemMochilas = ({listado}) => {
+console.log(listado)
+    const {id} = useParams()
+    console.log(id)
     return (
         <div id="itemmochilas" className="row">
-            
-            <div className="col-12 titulo">
-                <p>Inicio / Bolsos y Mochilas / Mochilas</p>
-            </div>
-            <div className="col-6 slide-container">
-                <SlideItemMochilas/>
-            </div>
-            <div className="col-6 texto">
-                <h1>C531/ Mochila "Fort"</h1>
-                <p>Mochila porta Notebook. Presenta dos bolsillos en el frente
-                con cierre oculto y en la parte superior central una chapa
-                de 5cm x 1cm para poder grabar una inscripción. Luego
-                dos compartimientos, el primero con un cierre doble, el
-                segundo y principal, también con cierre doble que contiene
-                sobre el sector de la espalda el bolsillo porta notebook con
-                sujetador con velcro con capacidad para introducir una
-                notebook de hasta 17&Prime.</p>
-                <p className="d-inline precio"><b>AR$1.970,78</b>+ iva</p>
-                <p>Cantidad Mínima: 1 unidad.</p>
-                <div className="row">
-                    <div className="col-4">
-                        <Contador/>
-                    </div>
-                    <div className="col-8">
-                        <button> Agregar al carrito</button>
-                    </div>
+                <div className="col-12 titulo">
+                    <p>Inicio / Bolsos y Mochilas / Mochilas</p>
                 </div>
-                <div className="botones">                    
-                    <p>Colores disponibles:</p>
-                    <button className="grisoscuro"></button>
-                    <button className="rojo"></button>
-                    <button className="celeste"></button>
-                    <button className="grisclaro"></button>
-                    <button className="verde"></button>
-                </div>
-            </div>
-            <div className="col-12 bbox"></div>
+                {
+                    listado.filter(a => a.id == id).map(a => {
+                        return <ItemMochilaDetalle key={a.id} id={a.id} title={a.title} description={a.description} price={a.price} stock={a.stock} pictureUrl={a.pictureUrl} pictureUrl1={a.pictureUrl1} pictureUrl2={a.pictureUrl2} />
+                    })
+                }
+                <div className="col-12 bbox"></div>
         </div>
     )
 }

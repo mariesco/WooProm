@@ -3,7 +3,7 @@ body {
   /*font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;*/
-  font-family: 'Pathway Gothic One', sans-serif;
+  font-family: "Pathway Gothic One", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin-top: 50px;
@@ -13,7 +13,7 @@ img {
   max-width: 50%;
 }
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -27,11 +27,11 @@ code {
 }
 
 .navbar-toggler-icon {
-  background-image: none
+  background-image: none;
 }
 
 .text-danger {
-  color: #ff4a4a!important;
+  color: #ff4a4a !important;
 }
 
 .footer {
@@ -69,7 +69,7 @@ code {
   color: black;
 }
 
-.product-title:hover{
+.product-title:hover {
   color: black;
   opacity: 0.5;
 }
@@ -105,7 +105,7 @@ code {
 .btn-danger:hover {
   background-color: white;
   color: black;
-  
+
   border-bottom: 1px solid black;
 }
 .item-count {
@@ -121,17 +121,18 @@ code {
 }
 
 .item-count .left {
-  float: left;  
+  float: left;
 }
 .item-count .right {
-  float: right;  
+  float: right;
 }
 
 .efecto {
   opacity: 1;
   transition: all ease 500ms;
   border-radius: 0px;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px, rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px,
+    rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
 }
 
 .efecto:hover {
@@ -153,7 +154,8 @@ code {
   border-radius: 100%;
   width: 50px;
   height: 50px;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px, rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px,
+    rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
 }
 
 .cart-float .nav-link {
@@ -167,13 +169,13 @@ code {
 
 .badge {
   z-index: 99999;
-  background-color: red;
+  background-color: black;
   color: white;
   border-radius: 100%;
   text-align: center;
-  position: fixed;
-  bottom: 65px;
-  right: 20px;
+  position: absolute;
+  top: 68px;
+  right: 55px;
 }
 
 .link-item {
@@ -199,7 +201,8 @@ code {
   z-index: 999;
   border-radius: 0;
   border: 0;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px, rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px,
+    rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
 }
 
 .delete:hover {
@@ -222,22 +225,21 @@ code {
   color: black;
 }
 
-textarea:hover, 
-input:hover, 
-textarea:active, 
-input:active, 
-textarea:focus, 
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
 input:focus,
 button:focus,
 button:active,
 button:hover,
 label:focus,
 .btn:active,
-.btn.active
-{
-    outline:0px !important;
-    -webkit-appearance:none;
-    box-shadow: none !important;
+.btn.active {
+  outline: 0px !important;
+  -webkit-appearance: none;
+  box-shadow: none !important;
 }
 
 input:focus {

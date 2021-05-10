@@ -1,5 +1,4 @@
 #destacados {
-  background-color: #f2d742;
   padding: 50px;
 }
 
@@ -21,6 +20,35 @@
   font-size: 32px;
   color: #333;
   font-weight: 700;
+}
+
+#destacados .slide-container {
+  overflow: hidden;
+}
+
+#destacados .slide-container .react-multi-carousel-list {
+  overflow: initial;
+}
+
+#destacados .slide-container .react-multi-carousel-list .react-multiple-carousel__arrow {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+#destacados .slide-container .react-multi-carousel-list .react-multiple-carousel__arrow--right {
+  right: -12px;
+}
+
+#destacados .slide-container .react-multi-carousel-list .react-multiple-carousel__arrow--left {
+  left: -12px;
+}
+
+#destacados .slide-container .react-multi-carousel-list .react-multi-carousel-dot-list .react-multi-carousel-dot button {
+  background-color: #383838;
+}
+
+#destacados .slide-container .react-multi-carousel-list .react-multi-carousel-dot-list .react-multi-carousel-dot--active button {
+  border: 2px solid #f5df4d;
+  background-color: #cccccc;
 }
 
 #destacados .slide-container .row {
@@ -70,7 +98,7 @@
 }
 
 #itemmochilas .titulo {
-  border-bottom: 3px solid #f2d742;
+  border-bottom: 3px solid #f5df4d;
   display: inline;
   width: 100%;
   padding: 20px 0;
@@ -80,7 +108,7 @@
 #itemmochilas .titulo p {
   display: inline;
   font-size: 32px;
-  color: #909599;
+  color: #939597;
   font-weight: 700;
 }
 
@@ -90,7 +118,15 @@
 }
 
 #itemmochilas .slide-container img {
-  height: 350px;
+  height: 450px;
+}
+
+#itemmochilas .slide-container .image-gallery .image-gallery-content .image-gallery-thumbnails-container button {
+  width: 150px;
+}
+
+#itemmochilas .slide-container .image-gallery .image-gallery-content .image-gallery-thumbnails-container button .image-gallery-thumbnail-inner .image-gallery-thumbnail-image {
+  height: auto;
 }
 
 #itemmochilas .texto h1 {
@@ -114,10 +150,14 @@
   margin-right: 25px;
 }
 
-#itemmochilas .texto .row .col-8 button {
+#itemmochilas .texto .row .col-lg-4 {
+  margin-bottom: 20px;
+}
+
+#itemmochilas .texto .row .col-lg-8 button {
   padding: 10px 35px;
   width: 100%;
-  background-color: #343434;
+  background-color: #383838;
   font-size: 20px;
   color: white;
   border: none;
@@ -141,7 +181,7 @@
 }
 
 #itemmochilas .texto .botones .grisoscuro {
-  background-color: #343434;
+  background-color: #383838;
 }
 
 #itemmochilas .texto .botones .rojo {
@@ -153,7 +193,7 @@
 }
 
 #itemmochilas .texto .botones .grisclaro {
-  background-color: #909599;
+  background-color: #939597;
 }
 
 #itemmochilas .texto .botones .verde {
@@ -161,21 +201,103 @@
 }
 
 #itemmochilas .bbox {
-  border-bottom: 3px solid #f2d742;
+  border-bottom: 3px solid #f5df4d;
   margin-top: 30px;
 }
 
-.btncontador {
-  padding: 10px 7px;
-  background-color: #f2d742;
-  border: none;
-  border-radius: 5px;
-}
-
-.spancontador {
-  padding: 10px 25px;
-  border-bottom: 1px solid black;
-  margin: 0 5px;
+@media screen and (min-width: 576px) and (max-width: 1140px) {
+  #destacados {
+    padding: 30px;
+  }
+  #destacados .slide-container .row {
+    padding: 0px 30px;
+  }
+  #destacados .slide-container .row .col-sm-6 {
+    padding: 30px 15px 0 15px;
+  }
+  #destacados .slide-container .row .col-sm-6 img {
+    height: 430px;
+  }
+  #destacados .slide-container .row .col-sm-6 h1 {
+    padding: 5px 0;
+    margin: 0;
+  }
+  #destacados .slide-container .row .col-sm-6 p {
+    font-weight: 300;
+    color: #444;
+    font-size: 24px;
+    line-height: 27px;
+    padding: 15px 0;
+  }
+  #destacados .slide-container .row .col-sm-6 .precio {
+    font-size: 30px;
+    font-weight: 800;
+    margin-right: 25px;
+  }
+  #destacados .slide-container .row .col-sm-6 a {
+    color: white;
+    padding: 8px 18px;
+    background-color: #777;
+    font-size: 22px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  #itemmochilas {
+    padding: 30px;
+  }
+  #itemmochilas .texto h1 {
+    font-size: 32px;
+    color: #333;
+    font-weight: 900;
+    padding: 15px 0;
+  }
+  #itemmochilas .texto p {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  #itemmochilas .texto .precio b {
+    font-size: 26px;
+    margin-right: 25px;
+  }
+  #itemmochilas .texto .row .col-lg-4 {
+    margin-bottom: 20px;
+  }
+  #itemmochilas .texto .row .col-lg-8 button {
+    padding: 10px;
+  }
+  #itemmochilas .texto .botones p {
+    font-weight: 300;
+    color: #444;
+    font-size: 22px;
+    line-height: 24px;
+    padding: 20px 0;
+  }
+  #itemmochilas .texto .botones button {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+  }
+  #itemmochilas .texto .botones .grisoscuro {
+    background-color: #383838;
+  }
+  #itemmochilas .texto .botones .rojo {
+    background-color: red;
+  }
+  #itemmochilas .texto .botones .celeste {
+    background-color: royalblue;
+  }
+  #itemmochilas .texto .botones .grisclaro {
+    background-color: #939597;
+  }
+  #itemmochilas .texto .botones .verde {
+    background-color: green;
+  }
+  #itemmochilas .bbox {
+    border-bottom: 3px solid #f5df4d;
+    margin-top: 30px;
+  }
 }
 
 @media (max-width: 576px) {

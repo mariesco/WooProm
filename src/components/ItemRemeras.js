@@ -1,15 +1,15 @@
 import React from 'react'
 import Marcas from './Marcas'
-import ProductosDestacados from './ProductosDestacados'
 import Slide1 from './Slide1'
+import ListadoProductos from './ListadoProductos'
 
 const remeras = <h1>Remeras</h1>
 
-const ItemRemeras = () => {
+const ItemRemeras = ({listado}) => {
     return (
         <>
             <Slide1/>
-            <ProductosDestacados titulo={remeras} />
+            <ListadoProductos listado={listado} titulo={remeras} />
             <Marcas/>
         </>
     )
