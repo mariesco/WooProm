@@ -1,7 +1,7 @@
 @import "./_vars.scss";
 
 #itemcount {
-  .col-lg-5 {
+  .contador {
     margin-bottom: 0px;
     padding: 0;
     .btncontador {
@@ -16,7 +16,7 @@
       margin: 0 5px;
     }
   }
-  .col-lg-7 {
+  .agregar {
     button {
       padding: 10px 0px;
       width: 100%;

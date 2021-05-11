@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.a0c528f6.chunk.css",
-    "main.js": "/static/js/main.0b3628db.chunk.js",
-    "main.js.map": "/static/js/main.0b3628db.chunk.js.map",
+    "main.css": "/static/css/main.2be82298.chunk.css",
+    "main.js": "/static/js/main.96a26a83.chunk.js",
+    "main.js.map": "/static/js/main.96a26a83.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.92b2eefc.js",
     "runtime-main.js.map": "/static/js/runtime-main.92b2eefc.js.map",
     "static/css/2.8ffcda6f.chunk.css": "/static/css/2.8ffcda6f.chunk.css",
-    "static/js/2.9769b54c.chunk.js": "/static/js/2.9769b54c.chunk.js",
-    "static/js/2.9769b54c.chunk.js.map": "/static/js/2.9769b54c.chunk.js.map",
+    "static/js/2.82e83f14.chunk.js": "/static/js/2.82e83f14.chunk.js",
+    "static/js/2.82e83f14.chunk.js.map": "/static/js/2.82e83f14.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.8ffcda6f.chunk.css.map": "/static/css/2.8ffcda6f.chunk.css.map",
-    "static/css/main.a0c528f6.chunk.css.map": "/static/css/main.a0c528f6.chunk.css.map",
-    "static/js/2.9769b54c.chunk.js.LICENSE.txt": "/static/js/2.9769b54c.chunk.js.LICENSE.txt",
+    "static/css/main.2be82298.chunk.css.map": "/static/css/main.2be82298.chunk.css.map",
+    "static/js/2.82e83f14.chunk.js.LICENSE.txt": "/static/js/2.82e83f14.chunk.js.LICENSE.txt",
     "static/media/cartico.4d015367.svg": "/static/media/cartico.4d015367.svg",
     "static/media/chale_polar_1.a3b1c260.jpg": "/static/media/chale_polar_1.a3b1c260.jpg",
     "static/media/faceico.782fe5fc.svg": "/static/media/faceico.782fe5fc.svg",
@@ -31,8 +31,8 @@
   "entrypoints": [
     "static/js/runtime-main.92b2eefc.js",
     "static/css/2.8ffcda6f.chunk.css",
-    "static/js/2.9769b54c.chunk.js",
-    "static/css/main.a0c528f6.chunk.css",
-    "static/js/main.0b3628db.chunk.js"
+    "static/js/2.82e83f14.chunk.js",
+    "static/css/main.2be82298.chunk.css",
+    "static/js/main.96a26a83.chunk.js"
   ]
 }

@@ -1,6 +1,7 @@
 @import "./_vars.scss";
 
 #compromiso {
+  margin: 90px 0;
   padding: 50px 40px;
   background-color: $amarillo;
   .col-sm-4 {
@@ -23,7 +24,7 @@
 
 #confianza {
   background-color: $grisClaro;
-  margin: 80px 0;
+  margin: 180px 0;
   padding: 25px 50px;
   .titulo {
     border-bottom: 1px solid black;
@@ -111,10 +112,12 @@
       padding: 10px;
     }
   }
+  .react-multi-carousel-dot-list {
+    display: none;
+  }
 
   #confianza {
     background-color: $amarillo;
-    margin: 60px 0;
     padding: 50px 20px;
     .titulo {
       h1 {

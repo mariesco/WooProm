@@ -5,8 +5,9 @@ import carrito from '../assets/img/SVG/cartico.svg'
 import CartWidget from './CartWidget'
 
 const Header2 = () => {
+    
     return (
-        <div id="header2" className="row">
+        <div id="mainNav" className="row">
             <div className="col-5 order-0 order-sm-0 col-sm-3">
                 <NavLink to="/">
                     <img src={logo} alt=""/>

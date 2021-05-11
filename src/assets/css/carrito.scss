@@ -22,13 +22,13 @@
         .col-sm-6 {
           .row {
             padding: 25px 0;
-            .col-sm-3 {
+            .col-5 {
               img {
                 width: 80px;
                 height: 80px;
               }
             }
-            .col-sm-9 {
+            .col-7 {
               .modelo {
                 font-weight: 900;
                 font-size: 26px;
@@ -45,6 +45,9 @@
         .count {
           text-align: right;
           padding: 40px 0;
+          p {
+            font-size: 32px;
+          }
         }
         .precio {
           text-align: right;
@@ -63,33 +66,23 @@
         font-weight: 900;
         font-size: 36px;
       }
-      button {
-        margin-top: 55px;
-        width: 100%;
-        color: $grisOscuro;
-        background-color: $amarillo;
-        border-radius: 15px;
-        font-size: 22px;
-        padding: 10px;
-        border: none;
-      }
     }
     .presupuesto {
-      padding-top: 40px;
       text-align: right;
-      p {
-        font-weight: 900;
-        font-size: 36px;
-      }
       a {
-        width: 100%;
+        width: 100px;
         color: white;
         text-decoration: none;
         background-color: $grisOscuro;
         border-radius: 15px;
         font-size: 22px;
         border: none;
-        padding: 10px;
+        padding: 10px 40px;
+      }
+      .volver {
+        background-color: $amarillo;
+        color: $grisOscuro;
+        padding: 10px 50px;
       }
     }
   }

@@ -23,14 +23,15 @@ const Form = () => {
           <input onChange={ e => setEmpresa(e.target.value)} type="text" placeholder="Empresa" value={ empresa }/>  
           <input type="text" placeholder="E-mail"/>  
           <input type="text" placeholder="Teléfono"/>  
-          <input className="porque" type="text" placeholder="¿Por qué medio desea ser contactado?"/>
+          <p className="porque" >¿Por qué medio desea ser contactado?</p>
           <label htmlFor=""> <input type="checkbox" name="" id=""/> Teléfono </label>
           <label htmlFor=""> <input type="checkbox" name="" id=""/> E-mail </label>
-          <input className="porque" type="text" placeholder="¿Como nos conoció?"/>
+          <p className="porque" >¿Como nos conoció?</p>
           <label htmlFor=""> <input type="checkbox" name="" id=""/> Newsletter </label>
           <label htmlFor=""> <input type="checkbox" name="" id=""/> Google </label>
           <label htmlFor=""> <input type="checkbox" name="" id=""/> Redes </label>
           <label htmlFor=""> <input type="checkbox" name="" id=""/> Recomendación </label>
+          <textarea name="" id="" cols="30" rows="10" placeholder="¿Quiere dejarnos algun comentario?"></textarea>
           <div>
               <button>FINALIZAR</button>
           </div>

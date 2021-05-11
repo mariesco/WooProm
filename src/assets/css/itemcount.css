@@ -1,22 +1,22 @@
-#itemcount .col-lg-5 {
+#itemcount .contador {
   margin-bottom: 0px;
   padding: 0;
 }
 
-#itemcount .col-lg-5 .btncontador {
+#itemcount .contador .btncontador {
   padding: 10px 7px;
   background-color: #f5df4d;
   border: none;
   border-radius: 5px;
 }
 
-#itemcount .col-lg-5 .spancontador {
+#itemcount .contador .spancontador {
   padding: 10px 25px;
   border-bottom: 1px solid black;
   margin: 0 5px;
 }
 
-#itemcount .col-lg-7 button {
+#itemcount .agregar button {
   padding: 10px 0px;
   width: 100%;
   background-color: #383838;

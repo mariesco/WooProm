@@ -1,5 +1,5 @@
 import React from 'react'
-import camion from '../assets/img/logos-clientes/acuvue.png'
+import camion from '../assets/img/SVG/truckico.svg'
 import '../assets/css/envios.css'
 
 const Envios = () => {

@@ -22,18 +22,19 @@ const Carrito = ({listado}) => {
                             return  <ItemCarrito  key={a.id} id={a.id} title={a.title} total={a.total} price={a.precio} pictureUrl={a.pictureUrl} cantidad={a.quantity} />
                         })
                     }
-                    <div className="col-sm-4 order-0"></div>
-                    <div className="col-sm-4 total">
-                        <p></p>
-                        <button>VOLVER AL CATÁLOGO</button>
-                    </div>
-                    <div className="col-sm-4 presupuesto">
+                    <div className="col-12 total">
                         <p>TOTAL ${totalCarro}</p>
+                    </div>
+                    <div className="col-sm-6 order-0"></div>
+                    <div className="col-sm-3 presupuesto">
+                        <NavLink className="volver" to="/">VOLVER AL CATÁLOGO</NavLink>
+                    </div>
+                    <div className="col-sm-3 presupuesto">
                         <NavLink to="/checkout">SOLICITAR PRESUPUESTO</NavLink>
                     </div>
                     </>
                     :
-                    "compra gil"
+                    "Tu carrito está vacío"
                 }
             </div>
         </div>

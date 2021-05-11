@@ -85,8 +85,9 @@
 
 #novedades .boton a {
   color: #939597;
-  border-bottom: 1px solid #383838;
+  border-bottom: 1px solid #939597;
   text-decoration: none;
+  padding: 8px 0;
   font-size: 20px;
 }
 

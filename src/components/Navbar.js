@@ -7,7 +7,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className="navbar navbar-expand-md navbar-dark fixed-top">
+      <nav className="navbar navbar-expand-md navbar-dark">
         <div className="container-fluid">
           <NavLink to="/" className="navbar-brand">
           </NavLink>

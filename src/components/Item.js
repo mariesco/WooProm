@@ -59,9 +59,11 @@ const ItemProductosDestacados = ({id, title, stock, description, price, pictureU
             </NavLink>
         </Carousel>                
             <div className="texto">
+              <NavLink to={`/item/`+ id}>
                 <h1>{title}</h1>
                 <p className="detalle">{description} </p>
                 <p>${price} + IVA</p>
+              </NavLink>
             </div>
         </>
     )

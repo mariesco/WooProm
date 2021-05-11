@@ -25,18 +25,18 @@
   padding: 25px 0;
 }
 
-#carrito .row .lista .row .col-sm-6 .row .col-sm-3 img {
+#carrito .row .lista .row .col-sm-6 .row .col-5 img {
   width: 80px;
   height: 80px;
 }
 
-#carrito .row .lista .row .col-sm-6 .row .col-sm-9 .modelo {
+#carrito .row .lista .row .col-sm-6 .row .col-7 .modelo {
   font-weight: 900;
   font-size: 26px;
   margin: 0;
 }
 
-#carrito .row .lista .row .col-sm-6 .row .col-sm-9 .detalle {
+#carrito .row .lista .row .col-sm-6 .row .col-7 .detalle {
   font-size: 22px;
   font-weight: 300;
   margin: 0;
@@ -45,6 +45,10 @@
 #carrito .row .lista .row .count {
   text-align: right;
   padding: 40px 0;
+}
+
+#carrito .row .lista .row .count p {
+  font-size: 32px;
 }
 
 #carrito .row .lista .row .precio {
@@ -67,36 +71,25 @@
   font-size: 36px;
 }
 
-#carrito .row .total button {
-  margin-top: 55px;
-  width: 100%;
-  color: #383838;
-  background-color: #f5df4d;
-  border-radius: 15px;
-  font-size: 22px;
-  padding: 10px;
-  border: none;
-}
-
 #carrito .row .presupuesto {
-  padding-top: 40px;
   text-align: right;
 }
 
-#carrito .row .presupuesto p {
-  font-weight: 900;
-  font-size: 36px;
-}
-
 #carrito .row .presupuesto a {
-  width: 100%;
+  width: 100px;
   color: white;
   text-decoration: none;
   background-color: #383838;
   border-radius: 15px;
   font-size: 22px;
   border: none;
-  padding: 10px;
+  padding: 10px 40px;
+}
+
+#carrito .row .presupuesto .volver {
+  background-color: #f5df4d;
+  color: #383838;
+  padding: 10px 50px;
 }
 
 @media (max-width: 576px) {

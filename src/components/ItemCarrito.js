@@ -19,10 +19,10 @@ const ItemCarrito = ({id, title, stock, description, price, pictureUrl, total, c
             <div className="row">
             <div className="col-sm-6">
                 <div className="row">
-                    <div className="col-5 col-sm-3">
+                    <div className="col-5 col-sm-2">
                         <img src={pictureUrl} alt=""/>
                     </div>
-                    <div className="col-7 col-sm-9">
+                    <div className="col-7 col-sm-10">
                         <p className="modelo">{title}</p>
                         <p className="detalle">Precio Unitario: ${price} </p>
                     </div>

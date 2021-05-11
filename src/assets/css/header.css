@@ -1,6 +1,7 @@
 .navbar {
   background-color: #383838;
   width: 100%;
+  margin-top: -50px;
 }
 
 .navbar .navbar-nav {
@@ -48,76 +49,80 @@
   margin-left: 260px;
 }
 
-#header2 {
+#mainNav {
   padding: 0px 40px;
   background-color: #939597;
   width: 100%;
   margin: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 9;
 }
 
-#header2 .col-sm-3 {
+#mainNav .col-sm-3 {
   padding: 35px;
   padding-left: 60px;
 }
 
-#header2 .drop {
+#mainNav .drop {
   padding: 35px 0;
 }
 
-#header2 .drop .dropdown .btn {
+#mainNav .drop .dropdown .btn {
   padding: 8px 25px;
   border-radius: 8px;
   background-color: #f5df4d;
 }
 
-#header2 .drop .dropdown:hover > .dropdown-menu {
+#mainNav .drop .dropdown:hover > .dropdown-menu {
   display: block;
 }
 
-#header2 .drop .dropdown > .dropdown-toggle:active {
+#mainNav .drop .dropdown > .dropdown-toggle:active {
   /*Without this, clicking will make it sticky*/
   pointer-events: none;
 }
 
-#header2 .col-sm-5 {
+#mainNav .col-sm-5 {
   padding: 36px;
   padding-bottom: 0;
 }
 
-#header2 .col-sm-5 form {
+#mainNav .col-sm-5 form {
   text-align: right;
 }
 
-#header2 .col-sm-5 form input {
+#mainNav .col-sm-5 form input {
   border: none;
   border-radius: 15px;
 }
 
-#header2 .col-sm-5 form :-ms-input-placeholder {
+#mainNav .col-sm-5 form :-ms-input-placeholder {
   color: #939597;
 }
 
-#header2 .col-sm-5 form .buscar {
+#mainNav .col-sm-5 form .buscar {
   position: relative;
-  top: -34px;
-  margin-left: -70px;
+  top: -32px;
+  right: 4px;
   background-color: #f5df4d;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
   border: none;
-  padding: 4px 15px;
+  padding: 2px 15px;
 }
 
-#header2 .col-sm-5 form .buscar svg {
+#mainNav .col-sm-5 form .buscar svg {
   margin-right: 10px;
 }
 
-#header2 .carro {
+#mainNav .carro {
   padding: 30px;
   text-align: right;
 }
 
-#header2 .carro a img {
+#mainNav .carro a img {
   width: 50px;
 }
 
@@ -149,30 +154,30 @@
   .navbar .navbar-nav div .redes1 {
     margin-left: 260px;
   }
-  #header2 {
+  #mainNav {
     padding: 0px 40px;
     background-color: #939597;
     width: 100%;
     margin: 0;
   }
-  #header2 .col-sm-3 {
+  #mainNav .col-sm-3 {
     padding: 40px 5px;
   }
-  #header2 .col-sm-5 {
+  #mainNav .col-sm-5 {
     padding: 36px;
     padding-bottom: 0;
   }
-  #header2 .col-sm-5 form {
+  #mainNav .col-sm-5 form {
     text-align: right;
   }
-  #header2 .col-sm-5 form input {
+  #mainNav .col-sm-5 form input {
     border: none;
     border-radius: 15px;
   }
-  #header2 .col-sm-5 form :-ms-input-placeholder {
+  #mainNav .col-sm-5 form :-ms-input-placeholder {
     color: #939597;
   }
-  #header2 .col-sm-5 form .buscar {
+  #mainNav .col-sm-5 form .buscar {
     position: relative;
     top: -34px;
     margin-left: -70px;
@@ -182,13 +187,13 @@
     border: none;
     padding: 4px 15px;
   }
-  #header2 .col-sm-5 form .buscar svg {
+  #mainNav .col-sm-5 form .buscar svg {
     margin-right: 10px;
   }
-  #header2 .carro {
+  #mainNav .carro {
     padding: 35px 10px;
   }
-  #header2 .carro img {
+  #mainNav .carro img {
     width: 50px;
   }
 }
@@ -228,52 +233,52 @@
   .navbar .navbar-nav div .redes1 {
     margin-left: 45px;
   }
-  #header2 {
+  #mainNav {
     padding: 0px 20px;
   }
-  #header2 .col-sm-3 {
+  #mainNav .col-sm-3 {
     padding: 0;
     position: fixed;
     top: 10px;
     z-index: 9999;
   }
-  #header2 .col-sm-3 img {
+  #mainNav .col-sm-3 img {
     max-width: 75%;
     width: 100px;
   }
-  #header2 .drop {
+  #mainNav .drop {
     max-width: 50%;
     padding: 35px 0;
   }
-  #header2 .drop .dropdown .btn {
+  #mainNav .drop .dropdown .btn {
     padding: 8px 25px;
   }
-  #header2 .col-sm-5 {
+  #mainNav .col-sm-5 {
     padding: 36px 0;
     padding-bottom: 0;
   }
-  #header2 .col-sm-5 form {
+  #mainNav .col-sm-5 form {
     margin-bottom: 0;
   }
-  #header2 .col-sm-5 form .buscar {
+  #mainNav .col-sm-5 form .buscar {
     top: -36px;
     margin-left: -70px;
     padding: 4px 15px;
   }
-  #header2 .carro {
+  #mainNav .carro {
     max-width: 50%;
     padding: 35px 0;
     padding-right: 20px;
   }
-  #header2 .carro .buscar2 {
+  #mainNav .carro .buscar2 {
     color: #f5df4d;
   }
-  #header2 .carro .buscar2 svg {
+  #mainNav .carro .buscar2 svg {
     height: 25px;
     width: 25px;
     margin-right: 15px;
   }
-  #header2 .carro img {
+  #mainNav .carro img {
     width: 40px;
   }
 }

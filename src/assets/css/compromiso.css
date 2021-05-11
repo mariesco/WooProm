@@ -1,4 +1,5 @@
 #compromiso {
+  margin: 90px 0;
   padding: 50px 40px;
   background-color: #f5df4d;
 }
@@ -25,7 +26,7 @@
 
 #confianza {
   background-color: #cccccc;
-  margin: 80px 0;
+  margin: 180px 0;
   padding: 25px 50px;
 }
 
@@ -122,9 +123,11 @@
   #compromiso .col-sm-4 {
     padding: 10px;
   }
+  .react-multi-carousel-dot-list {
+    display: none;
+  }
   #confianza {
     background-color: #f5df4d;
-    margin: 60px 0;
     padding: 50px 20px;
   }
   #confianza .titulo h1 {

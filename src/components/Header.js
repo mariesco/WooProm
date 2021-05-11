@@ -9,8 +9,8 @@ function Header() {
         <>
             <header>
                 <Navbar/>
-                <Header2/>
-            </header>            
+            </header>   
+                <Header2/>         
         </>
     )
 }

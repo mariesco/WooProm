@@ -54,8 +54,12 @@
     }
 
     .texto {
+      a {
+        text-decoration: none;
+      }
       h1,
       p {
+        color: $grisOscuro;
         font-size: 18px;
         font-weight: 500;
         margin: 0;

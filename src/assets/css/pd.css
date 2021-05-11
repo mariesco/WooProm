@@ -58,8 +58,13 @@
   right: -15px;
 }
 
+#productos-destacados .col-sm-3 .texto a {
+  text-decoration: none;
+}
+
 #productos-destacados .col-sm-3 .texto h1,
 #productos-destacados .col-sm-3 .texto p {
+  color: #383838;
   font-size: 18px;
   font-weight: 500;
   margin: 0;

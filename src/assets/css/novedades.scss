@@ -73,8 +73,9 @@
     text-align: center;
     a {
       color: $gris;
-      border-bottom: 1px solid $grisOscuro;
+      border-bottom: 1px solid $gris;
       text-decoration: none;
+      padding: 8px 0;
       font-size: 20px;
     }
   }

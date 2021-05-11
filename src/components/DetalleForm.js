@@ -23,7 +23,7 @@ const DetalleForm = () => {
                     
                 {
                 carro.map(a => {
-                                                                                    return <DetalleItemCheckout key={a.id} id={a.   id} price={a.precio} quantity={a.quantity} pictureUrl= { a.pictureUrl } title= { a.title }/>
+                    return <DetalleItemCheckout key={a.id} id={a.   id} price={a.precio} quantity={a.quantity} pictureUrl= { a.pictureUrl } title= { a.title }/>
                                                                 })
                                                             }
                     <div className="borde"></div>
@@ -36,7 +36,7 @@ const DetalleForm = () => {
                 </div>
                 </>
                 : 
-                "Comprame o te acuchillo"
+                "Comprar"
             }
         </div>
     )
