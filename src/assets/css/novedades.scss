@@ -8,19 +8,18 @@
       padding: 20px 0px;
       h1 {
         color: #777;
-        padding: 20px 0;
+        padding: 20px 0 0 0;
+        font-size: 2.1rem;
         border-bottom: 3px solid $amarillo;
       }
     }
   }
   .slide-container {
     width: 100%;
-    overflow: hidden;
-    .react-multi-carousel-list {
+    .swiper-container {
       padding: 50px 0;
-      overflow: initial;
-      .react-multi-carousel-track {
-        .react-multi-carousel-item {
+      .swiper-wrapper {
+        .swiper-slide {
           padding: 25px;
           div {
             text-align: center;
@@ -29,6 +28,9 @@
               width: 280px;
               height: auto;
               margin-bottom: 25px;
+              margin-left: auto;
+              margin-right: auto;
+              display: block;
             }
             a {
               text-decoration: none;
@@ -43,29 +45,11 @@
           }
         }
       }
-      .react-multiple-carousel__arrow {
-        background: rgba(0, 0, 0, 0.3);
-      }
-      .react-multiple-carousel__arrow--right {
+      .swiper-button-next {
         right: -12px;
       }
-      .react-multiple-carousel__arrow--left {
+      .swiper-button-prev {
         left: -12px;
-      }
-      .react-multi-carousel-dot-list {
-        display: none;
-        .react-multi-carousel-dot {
-          button {
-            width: 20px;
-            height: 20px;
-          }
-        }
-        .react-multi-carousel-dot--active {
-          button {
-            border: 2px solid $amarillo;
-            background-color: white;
-          }
-        }
       }
     }
   }
@@ -92,10 +76,10 @@
       }
     }
     .slide-container {
-      .react-multi-carousel-list {
+      .swiper-container {
         padding: 50px 0;
-        .react-multi-carousel-track {
-          .react-multi-carousel-item {
+        .swiper-wrapper {
+          .swiper-slide {
             padding: 25px 5px;
             div {
               img {
@@ -106,23 +90,6 @@
               a {
                 padding: 8px 12px;
               }
-            }
-          }
-        }
-        .react-multi-carousel-dot-list {
-          .react-multi-carousel-dot {
-            button {
-              width: 20px;
-              height: 20px;
-            }
-          }
-          .react-multiple-carousel__arrow {
-            background: rgba(0, 0, 0, 0.1);
-          }
-          .react-multi-carousel-dot--active {
-            button {
-              border: 2px solid $amarillo;
-              background-color: white;
             }
           }
         }

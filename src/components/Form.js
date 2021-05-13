@@ -5,6 +5,8 @@ const Form = () => {
     
     const [nombre, setNombre ] = useState('')
     const [empresa, setEmpresa] = useState('')
+    const [email, setEmail] = useState('')
+    const [telefono, setTelefono] = useState('')
 
 
 
@@ -13,6 +15,8 @@ const Form = () => {
         e.preventDefault()
         if(nombre === '') {notify('Debes insertar tu nombre y apellido'); return}
         if(empresa === '') {notify('Debes insertar el nombre de tu empresa'); return}
+        if(email === '') {notify('Debes insertar tu casilla de e-mail'); return}
+        if(telefono === '') {notify('Debes insertar tu número de teléfono'); return}
         console.log("enviado")
     }
 
@@ -21,8 +25,8 @@ const Form = () => {
            <input onChange={ e => setNombre(e.target.value)} type="text" placeholder="Nombre y Apellido" value={ nombre }/>
  
           <input onChange={ e => setEmpresa(e.target.value)} type="text" placeholder="Empresa" value={ empresa }/>  
-          <input type="text" placeholder="E-mail"/>  
-          <input type="text" placeholder="Teléfono"/>  
+          <input onChange={ e => setEmail(e.target.value)} type="text" placeholder="E-mail" value={ email }/>  
+          <input onChange={ e => setTelefono(e.target.value)} type="text" placeholder="Teléfono" value={ telefono }/>  
           <p className="porque" >¿Por qué medio desea ser contactado?</p>
           <label htmlFor=""> <input type="checkbox" name="" id=""/> Teléfono </label>
           <label htmlFor=""> <input type="checkbox" name="" id=""/> E-mail </label>

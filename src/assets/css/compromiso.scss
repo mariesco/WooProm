@@ -29,7 +29,7 @@
   .titulo {
     border-bottom: 1px solid black;
     h1 {
-      padding: 10px 0;
+      padding: 10px 0 0 0;
       color: $grisOscuro2;
       font-size: 36px;
       font-weight: 700;
@@ -37,34 +37,27 @@
   }
   .slide-container {
     padding: 0px 50px;
-    .react-multi-carousel-list {
-      overflow: hidden;
-      .react-multiple-carousel__arrow {
-        background: rgba(0, 0, 0, 0.3);
-      }
-      .react-multiple-carousel__arrow--right {
-        right: -12px;
-      }
-      .react-multiple-carousel__arrow--left {
-        left: -12px;
-      }
-      .react-multi-carousel-dot-list {
-        .react-multi-carousel-dot {
-          button {
-            background-color: $grisOscuro;
-          }
+    .swiper-container {
+      .swiper-pagination {
+        .swiper-pagination-bullet {
+          background-color: $grisOscuro;
+          opacity: 1;
         }
-        .react-multi-carousel-dot--active {
-          button {
-            border: 2px solid $amarillo;
-            background-color: $grisClaro;
-          }
+        .swiper-pagination-bullet-active {
+          border: 2px solid $amarillo;
+          background-color: white;
         }
+      }
+      .swiper-button-prev {
+        left: -30px;
+      }
+      .swiper-button-next {
+        right: -30px;
       }
     }
 
     div {
-      padding: 40px 5px;
+      padding: 10px 10px;
       img {
         width: 125px;
         height: 125px;
@@ -75,22 +68,30 @@
 
 #marcas {
   margin: 80px 0;
-  padding: 50px;
+  padding: 25px 50px;
   .titulo {
     border-bottom: 1px solid $amarillo;
     h1 {
-      padding: 10px 0;
+      padding: 10px 0 0 0;
       color: $amarillo;
       font-size: 34px;
     }
   }
   .slide-container {
-    padding: 30px 50px;
+    padding: 0px 60px;
     div {
-      padding: 20px 25px 40px 15px;
+      padding: 10px 10px;
+      text-align: center;
       img {
-        height: auto;
+        width: 125px;
+        height: 125px;
       }
+    }
+    .swiper-button-prev {
+      left: -30px;
+    }
+    .swiper-button-next {
+      right: -30px;
     }
   }
 }
@@ -112,25 +113,27 @@
       padding: 10px;
     }
   }
-  .react-multi-carousel-dot-list {
-    display: none;
-  }
 
   #confianza {
-    background-color: $amarillo;
     padding: 50px 20px;
     .titulo {
       h1 {
-        padding: 10px 0;
-        color: black;
         font-size: 24px;
       }
     }
     .slide-container {
       padding: 30px 0px;
+      .swiper-container {
+        .swiper-button-prev {
+          left: 0px;
+        }
+        .swiper-button-next {
+          right: 0px;
+        }
+      }
       div {
         text-align: center;
-        padding: 40px 5px;
+        padding: 10px 5px;
         img {
           width: 150px;
           height: 150px;
@@ -140,7 +143,6 @@
   }
 
   #marcas {
-    background-color: $grisOscuro;
     margin: 60px 0;
     padding: 50px 20px;
     .titulo {
@@ -151,9 +153,17 @@
     }
     .slide-container {
       padding: 30px 0px;
+      .swiper-container {
+        .swiper-button-prev {
+          left: 0px;
+        }
+        .swiper-button-next {
+          right: 0px;
+        }
+      }
       div {
         text-align: center;
-        padding: 40px 0;
+        padding: 10px 0;
         img {
           width: 150px;
           height: auto;

@@ -6,7 +6,7 @@
     border-bottom: 3px solid $amarillo;
     display: inline;
     width: 100%;
-    padding: 20px 0;
+    padding: 20px 0 0 0;
     p {
       display: inline;
       font-size: 32px;
@@ -18,13 +18,11 @@
     padding: 60px 0;
     .row {
       padding: 5px 0;
-      .col-2 {
-        img {
-          width: 80px;
-          height: 80px;
-        }
+      .image {
+        margin-top: 20px;
       }
-      .col-10 {
+      .descri {
+        padding-top: 25px;
         .modelo {
           font-weight: 900;
           font-size: 26px;
@@ -201,7 +199,7 @@
       border-bottom: 3px solid $amarillo;
       display: inline;
       width: 100%;
-      padding: 20px 0;
+      padding: 20px 0 0 0;
       p {
         display: inline;
         font-size: 32px;
@@ -210,7 +208,7 @@
       }
     }
     .detalle2 {
-      padding: 60px 0;
+      padding: 20px 0 60px 0;
       .row {
         padding: 5px 0;
         .col-3 {

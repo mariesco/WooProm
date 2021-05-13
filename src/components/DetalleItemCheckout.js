@@ -12,10 +12,10 @@ function DetalleItem( { id, title, price, quantity, pictureUrl } ) {
       */
       
       <div className="row">
-      <div className="col-2">
-          <img src={pictureUrl}/>
+      <div className="col-3 image">
+          <img className="img-fluid" src={pictureUrl}/>
       </div>
-      <div className="col-10">
+      <div className="col-9 descri">
           <p className="modelo">{title}</p>
           <p className="detalle">{ quantity } { quantity > 1 ? 'unidades' : 'unidad' } <b>${price}</b></p>
       </div>

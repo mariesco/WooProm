@@ -174,7 +174,7 @@ code {
   border-radius: 100%;
   text-align: center;
   position: absolute;
-  top: 68px;
+  top: 22px;
   right: 55px;
 }
 
@@ -242,10 +242,13 @@ label:focus,
   box-shadow: none !important;
 }
 
-input:focus {
-  border: 1px solid red !important;
-}
-
 .btn:hover {
   border: 1px solid black !important;
+}
+
+@media (max-width: 576px) {
+  .badge {
+    top: 22px;
+    right: 8px;
+  }
 }

@@ -7,6 +7,7 @@
     div {
       h1 {
         color: $gris;
+        font-size: 2.1rem;
       }
     }
   }
@@ -21,6 +22,7 @@
           img {
             max-width: 100%;
             margin-bottom: 15px;
+            padding: 25px;
           }
         }
       }
@@ -46,10 +48,10 @@
         font-weight: 900;
       }
       .react-multiple-carousel__arrow--left {
-        left: -15px;
+        left: 10px;
       }
       .react-multiple-carousel__arrow--right {
-        right: -15px;
+        right: 10px;
       }
     }
 
@@ -107,10 +109,10 @@
           }
         }
         .react-multiple-carousel__arrow--left {
-          left: -10px;
+          left: 8px;
         }
         .react-multiple-carousel__arrow--right {
-          right: -10px;
+          right: 8px;
         }
       }
     }

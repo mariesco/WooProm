@@ -2,18 +2,14 @@
 
 #envios {
   padding: 50px;
-  .col-sm-6 {
-    padding: 90px;
-    img {
-      width: 300px;
-      height: 300px;
-    }
+  .text {
+    padding: 40px 90px;
     div {
       border-bottom: 15px solid #333;
       width: fit-content;
       h1,
       h2 {
-        font-size: 100px;
+        font-size: 65px;
         color: #333;
         font-weight: 500;
       }
@@ -22,27 +18,38 @@
       }
     }
   }
+  .imagen {
+    text-align: right;
+    padding-right: 35px;
+    img {
+      width: 300px;
+      height: 300px;
+    }
+  }
   .text {
-    padding-left: 0;
+    padding-left: 35px;
   }
 }
 
 @media screen and (min-width: 576px) and (max-width: 1140px) {
   #envios {
     padding: 50px;
-    .col-sm-6 {
+    .col-6 {
       padding: 0px;
-      img {
-        width: 250px;
-        height: 250px;
-      }
       div {
         border-bottom: 8px solid #333;
         width: fit-content;
         h1,
         h2 {
-          font-size: 62px;
+          font-size: 42px;
         }
+      }
+    }
+    .imagen {
+      text-align: left;
+      img {
+        width: 200px;
+        height: 200px;
       }
     }
     .text {
@@ -53,13 +60,9 @@
 
 @media (max-width: 576px) {
   #envios {
-    padding: 20px;
-    .col-sm-6 {
+    padding: 50px 20px;
+    .col-6 {
       padding: 0px;
-      img {
-        width: 200px;
-        height: 200px;
-      }
       div {
         border-bottom: 8px solid #333;
         width: fit-content;
@@ -72,8 +75,16 @@
         }
       }
     }
+    .imagen {
+      text-align: left;
+      img {
+        width: 150px;
+        height: 150px;
+      }
+    }
     .text {
-      padding-left: 0;
+      padding-left: 10px;
+      padding-top: 20px;
     }
   }
 }

@@ -6,7 +6,7 @@
   border-bottom: 3px solid #f5df4d;
   display: inline;
   width: 100%;
-  padding: 20px 0;
+  padding: 20px 0 0 0;
 }
 
 #carrito .row .titulo p {
@@ -40,6 +40,10 @@
   font-size: 22px;
   font-weight: 300;
   margin: 0;
+}
+
+#carrito .row .lista .row .col-sm-6 .row .col-7 .ic {
+  opacity: 0;
 }
 
 #carrito .row .lista .row .count {
@@ -81,15 +85,16 @@
   text-decoration: none;
   background-color: #383838;
   border-radius: 15px;
-  font-size: 22px;
+  font-size: 18px;
   border: none;
-  padding: 10px 40px;
+  padding: 10px 25px;
 }
 
 #carrito .row .presupuesto .volver {
   background-color: #f5df4d;
   color: #383838;
-  padding: 10px 50px;
+  padding: 10px 25px;
+  font-size: 18px;
 }
 
 @media (max-width: 576px) {
@@ -100,7 +105,7 @@
     border-bottom: 3px solid #f5df4d;
     display: inline;
     width: 100%;
-    padding: 20px 0;
+    padding: 20px 0 0 0;
   }
   #carrito .row .titulo p {
     display: inline;
@@ -109,37 +114,55 @@
     font-weight: 700;
   }
   #carrito .row .lista {
-    padding: 10px 0;
+    padding: 0px 0;
     border-bottom: 1px solid #383838;
   }
   #carrito .row .lista .row .col-sm-6 .row {
-    padding: 25px 0;
+    padding: 0;
   }
-  #carrito .row .lista .row .col-sm-6 .row .col-sm-3 img {
-    width: 80px;
-    height: 80px;
+  #carrito .row .lista .row .col-sm-6 .row .col-sm-2 {
+    padding: 20px;
   }
-  #carrito .row .lista .row .col-sm-6 .row .col-sm-9 .modelo {
+  #carrito .row .lista .row .col-sm-6 .row .col-sm-10 {
+    padding-top: 25px;
+  }
+  #carrito .row .lista .row .col-sm-6 .row .col-sm-10 .modelo {
     font-weight: 900;
     font-size: 26px;
     margin: 0;
   }
-  #carrito .row .lista .row .col-sm-6 .row .col-sm-9 .detalle {
+  #carrito .row .lista .row .col-sm-6 .row .col-sm-10 .detalle {
     font-size: 22px;
     font-weight: 300;
     margin: 0;
   }
-  #carrito .row .lista .row .count {
-    text-align: right;
-    padding: 25px 0;
+  #carrito .row .lista .row .col-sm-6 .row .col-sm-10 .ic {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 1;
   }
-  #carrito .row .lista .row .precio {
-    text-align: right;
-    padding: 30px;
+  #carrito .row .lista .row .col-sm-6 .row .col-sm-10 .ic .count2 {
+    text-align: left;
+    padding: 10px 0px;
   }
-  #carrito .row .lista .row .precio p {
+  #carrito .row .lista .row .col-sm-6 .row .col-sm-10 .ic .count2 p {
     font-weight: 900;
     font-size: 26px;
+  }
+  #carrito .row .lista .row .col-sm-6 .row .col-sm-10 .ic .precio2 {
+    text-align: right;
+    padding: 10px 30px;
+  }
+  #carrito .row .lista .row .col-sm-6 .row .col-sm-10 .ic .precio2 p {
+    font-weight: 900;
+    font-size: 26px;
+  }
+  #carrito .row .lista .row .count {
+    display: none;
+  }
+  #carrito .row .lista .row .precio {
+    display: none;
   }
   #carrito .row .total {
     text-align: right;

@@ -6,7 +6,7 @@
   border-bottom: 3px solid #f5df4d;
   display: inline;
   width: 100%;
-  padding: 20px 0;
+  padding: 20px 0 0 0;
 }
 
 #DetalleForm .titulo p {
@@ -24,24 +24,27 @@
   padding: 5px 0;
 }
 
-#DetalleForm .detalle2 .row .col-2 img {
-  width: 80px;
-  height: 80px;
+#DetalleForm .detalle2 .row .image {
+  margin-top: 20px;
 }
 
-#DetalleForm .detalle2 .row .col-10 .modelo {
+#DetalleForm .detalle2 .row .descri {
+  padding-top: 25px;
+}
+
+#DetalleForm .detalle2 .row .descri .modelo {
   font-weight: 900;
   font-size: 26px;
   margin: 0;
 }
 
-#DetalleForm .detalle2 .row .col-10 .detalle {
+#DetalleForm .detalle2 .row .descri .detalle {
   font-size: 22px;
   font-weight: 300;
   margin: 0;
 }
 
-#DetalleForm .detalle2 .row .col-10 .detalle b {
+#DetalleForm .detalle2 .row .descri .detalle b {
   font-weight: 900;
 }
 
@@ -243,7 +246,7 @@
     border-bottom: 3px solid #f5df4d;
     display: inline;
     width: 100%;
-    padding: 20px 0;
+    padding: 20px 0 0 0;
   }
   #DetalleForm .titulo p {
     display: inline;
@@ -252,7 +255,7 @@
     font-weight: 700;
   }
   #DetalleForm .detalle2 {
-    padding: 60px 0;
+    padding: 20px 0 60px 0;
   }
   #DetalleForm .detalle2 .row {
     padding: 5px 0;

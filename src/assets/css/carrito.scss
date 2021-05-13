@@ -7,7 +7,7 @@
       border-bottom: 3px solid $amarillo;
       display: inline;
       width: 100%;
-      padding: 20px 0;
+      padding: 20px 0 0 0;
       p {
         display: inline;
         font-size: 32px;
@@ -38,6 +38,9 @@
                 font-size: 22px;
                 font-weight: 300;
                 margin: 0;
+              }
+              .ic {
+                opacity: 0;
               }
             }
           }
@@ -75,14 +78,15 @@
         text-decoration: none;
         background-color: $grisOscuro;
         border-radius: 15px;
-        font-size: 22px;
+        font-size: 18px;
         border: none;
-        padding: 10px 40px;
+        padding: 10px 25px;
       }
       .volver {
         background-color: $amarillo;
         color: $grisOscuro;
-        padding: 10px 50px;
+        padding: 10px 25px;
+        font-size: 18px;
       }
     }
   }
@@ -96,7 +100,7 @@
         border-bottom: 3px solid $amarillo;
         display: inline;
         width: 100%;
-        padding: 20px 0;
+        padding: 20px 0 0 0;
         p {
           display: inline;
           font-size: 32px;
@@ -105,19 +109,17 @@
         }
       }
       .lista {
-        padding: 10px 0;
+        padding: 0px 0;
         border-bottom: 1px solid $grisOscuro;
         .row {
           .col-sm-6 {
             .row {
-              padding: 25px 0;
-              .col-sm-3 {
-                img {
-                  width: 80px;
-                  height: 80px;
-                }
+              padding: 0;
+              .col-sm-2 {
+                padding: 20px;
               }
-              .col-sm-9 {
+              .col-sm-10 {
+                padding-top: 25px;
                 .modelo {
                   font-weight: 900;
                   font-size: 26px;
@@ -128,20 +130,34 @@
                   font-weight: 300;
                   margin: 0;
                 }
+                .ic {
+                  display: flex;
+                  opacity: 1;
+                  .count2 {
+                    text-align: left;
+                    padding: 10px 0px;
+                    p {
+                      font-weight: 900;
+                      font-size: 26px;
+                    }
+                  }
+                  .precio2 {
+                    text-align: right;
+                    padding: 10px 30px;
+                    p {
+                      font-weight: 900;
+                      font-size: 26px;
+                    }
+                  }
+                }
               }
             }
           }
           .count {
-            text-align: right;
-            padding: 25px 0;
+            display: none;
           }
           .precio {
-            text-align: right;
-            padding: 30px;
-            p {
-              font-weight: 900;
-              font-size: 26px;
-            }
+            display: none;
           }
         }
       }

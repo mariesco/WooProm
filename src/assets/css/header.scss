@@ -48,17 +48,18 @@
   position: sticky;
   top: 0;
   z-index: 9;
-  .col-sm-3 {
-    padding: 35px;
-    padding-left: 60px;
+  .logo {
+    padding: 35px 0;
+    text-align: center;
   }
   .drop {
-    padding: 35px 0;
+    padding: 32px 0;
     .dropdown {
       .btn {
         padding: 8px 25px;
         border-radius: 8px;
         background-color: $amarillo;
+        width: 100%;
       }
     }
     .dropdown:hover > .dropdown-menu {
@@ -69,7 +70,7 @@
       pointer-events: none;
     }
   }
-  .col-sm-5 {
+  .col-sm-6 {
     padding: 36px;
     padding-bottom: 0;
     form {
@@ -141,10 +142,10 @@
     background-color: $gris;
     width: 100%;
     margin: 0;
-    .col-sm-3 {
-      padding: 40px 5px;
+    .logo {
+      padding: 40px 0px;
     }
-    .col-sm-5 {
+    .col-sm-6 {
       padding: 36px;
       padding-bottom: 0;
       form {
@@ -200,17 +201,22 @@
         margin-left: auto;
         margin-right: auto;
         width: fit-content;
+        right: 0;
         .redes {
           margin: 20px 0;
+          margin-bottom: 50px;
           padding: 5px 0;
           width: 60px;
           .nav-link {
             padding: 0;
             border: none;
+            img {
+              max-width: 50%;
+            }
           }
         }
         .redes1 {
-          margin-left: 45px;
+          margin-left: 0px;
         }
       }
     }
@@ -218,13 +224,14 @@
 
   #mainNav {
     padding: 0px 20px;
-    .col-sm-3 {
+    .logo {
       padding: 0;
-      position: fixed;
-      top: 10px;
+      text-align: left;
+      position: absolute;
+      top: -40px;
       z-index: 9999;
       img {
-        max-width: 75%;
+        max-width: 100%;
         width: 100px;
       }
     }
@@ -237,7 +244,7 @@
         }
       }
     }
-    .col-sm-5 {
+    .col-sm-6 {
       padding: 36px 0;
       padding-bottom: 0;
       form {
@@ -252,17 +259,17 @@
     .carro {
       max-width: 50%;
       padding: 35px 0;
-      padding-right: 20px;
+      padding-right: 0px;
       .buscar2 {
         color: $amarillo;
         svg {
           height: 25px;
           width: 25px;
-          margin-right: 15px;
+          margin-right: 0px;
         }
       }
       img {
-        width: 40px;
+        width: 30px;
       }
     }
   }

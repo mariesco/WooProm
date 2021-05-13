@@ -4,30 +4,20 @@ import producto2 from '../assets/img/productos/C531_perfil-247x296.jpg'
 import SlidePadre from './SlidePadre'
 import SlideItemDestacados from './SlideItemDestacadoss'
 import { NavLink } from 'react-router-dom'
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/swiper.min.css";
+import "swiper/components/navigation/navigation.min.css"
+import "swiper/components/pagination/pagination.min.css"
+// import Swiper core and required modules
+import SwiperCore, {
+  Navigation,Pagination,Mousewheel,Keyboard
+} from 'swiper/core';
+// install Swiper modules
+SwiperCore.use([Navigation,Pagination,Mousewheel,Keyboard]);
 
 const SlideDestacados = () => {
-    const responsive = {
-        superLargeDesktop: {
-          // the naming can be any, depends on you.
-          breakpoint: { max: 4000, min: 3000 },
-          items: 1
-        },
-        desktop: {
-          breakpoint: { max: 3000, min: 1024 },
-          items: 1
-        },
-        tablet: {
-          breakpoint: { max: 1024, min: 464 },
-          items: 1
-        },
-        mobile: {
-          breakpoint: { max: 464, min: 0 },
-          items: 1
-        }
-      };
-
-      const infinite = true
-      const autoPlay = true
       
       const imagen1 = <img className="img-fluid imagen" src= {producto1} alt=""/>
 
@@ -49,14 +39,16 @@ const SlideDestacados = () => {
         
       const imagen2 = <img className="img-fluid" src= {producto2} alt=""/>
     const content = [
-      <SlideItemDestacados imagen={imagen1} texto={texto1} /> ,
-      <SlideItemDestacados imagen={imagen2} texto={texto1} />,
-      <SlideItemDestacados imagen={imagen1} texto={texto1} /> ,
-      <SlideItemDestacados imagen={imagen2} texto={texto1} />
+      <SwiperSlide><SlideItemDestacados imagen={imagen1} texto={texto1}/></SwiperSlide>,
+      <SwiperSlide><SlideItemDestacados imagen={imagen2} texto={texto1}/></SwiperSlide>,
+      <SwiperSlide><SlideItemDestacados imagen={imagen1} texto={texto1}/></SwiperSlide>,
+      <SwiperSlide><SlideItemDestacados imagen={imagen2} texto={texto1}/></SwiperSlide>
     ]
 
     return (
-        <SlidePadre responsive={responsive} content={content} autoPlay={autoPlay} infinite={infinite} />
+      <Swiper cssMode={true} loop={true} navigation={true} pagination={true} mousewheel={true} keyboard={true} className="mySwiper">
+        {content}
+      </Swiper>
     )
 }
 

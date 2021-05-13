@@ -6,7 +6,7 @@
     border-bottom: 3px solid #333;
     display: inline;
     width: 100%;
-    padding: 20px 0;
+    padding: 20px 0 0 0;
     svg {
       margin-top: -15px;
       color: #333;
@@ -14,47 +14,43 @@
     }
     p {
       display: inline;
-      font-size: 32px;
+      font-size: 2.1rem;
       color: #333;
       font-weight: 700;
     }
   }
   .slide-container {
-    overflow: hidden;
-    .react-multi-carousel-list {
-      overflow: initial;
-      .react-multiple-carousel__arrow {
-        background: rgba(0, 0, 0, 0.3);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    .swiper-container {
+      .swiper-button-next {
+        right: -20px;
       }
-      .react-multiple-carousel__arrow--right {
-        right: -12px;
+      .swiper-button-prev {
+        left: -20px;
       }
-      .react-multiple-carousel__arrow--left {
-        left: -12px;
-      }
-      .react-multi-carousel-dot-list {
-        .react-multi-carousel-dot {
-          button {
-            background-color: $grisOscuro;
-          }
+      .swiper-pagination {
+        .swiper-pagination-bullet {
+          background-color: $grisOscuro;
+          opacity: 1;
+          bottom: 0;
         }
-        .react-multi-carousel-dot--active {
-          button {
-            border: 2px solid $amarillo;
-            background-color: $grisClaro;
-          }
+        .swiper-pagination-bullet-active {
+          border: 2px solid $amarillo;
+          background-color: white;
         }
       }
     }
     .row {
-      padding: 0px 90px;
+      padding: 0px 10px;
       .col-sm-6 {
         padding: 30px 30px 0 30px;
         h1 {
-          font-size: 36px;
+          font-size: 32px;
           color: #333;
           font-weight: 900;
-          padding: 15px 0;
+          padding: 15px 0 0 0;
         }
         p {
           font-weight: 300;
@@ -87,7 +83,7 @@
     border-bottom: 3px solid $amarillo;
     display: inline;
     width: 100%;
-    padding: 20px 0;
+    padding: 20px 0 0 0;
     margin-bottom: 30px;
     p {
       display: inline;
@@ -98,10 +94,7 @@
   }
   .slide-container {
     text-align: center;
-    padding: 40px 0;
-    img {
-      height: 450px;
-    }
+    padding: 20px 0 40px 0;
     .image-gallery {
       .image-gallery-content {
         .image-gallery-thumbnails-container {
@@ -115,6 +108,9 @@
           }
         }
       }
+      .fullscreen {
+        top: 30%;
+      }
     }
   }
   .texto {
@@ -122,14 +118,15 @@
       font-size: 36px;
       color: #333;
       font-weight: 900;
-      padding: 15px 0;
+      padding: 20px 0 0 0;
+      margin: 0;
     }
     p {
       font-weight: 300;
       color: #444;
       font-size: 26px;
       line-height: 29px;
-      padding: 20px 0;
+      padding: 5px 0 20px 0;
     }
     .precio {
       b {
@@ -196,8 +193,9 @@
   #destacados {
     padding: 30px;
     .slide-container {
+      width: 100%;
       .row {
-        padding: 0px 30px;
+        padding: 0px 20px;
         .col-sm-6 {
           padding: 30px 15px 0 15px;
           h1 {
@@ -235,7 +233,7 @@
         font-size: 32px;
         color: #333;
         font-weight: 900;
-        padding: 15px 0;
+        padding: 15px 0 0 0;
       }
       p {
         font-size: 22px;
@@ -310,17 +308,23 @@
       }
     }
     .slide-container {
+      width: 90%;
+      .swiper-container {
+        .swiper-slide {
+          width: 100%;
+        }
+      }
       .row {
         padding: 0px 10px;
         .col-sm-6 {
           padding: 30px 0px 0 0px;
           h1 {
-            font-size: 30px;
+            font-size: 26px;
             padding: 15px 0;
           }
           p {
-            font-size: 26px;
-            line-height: 29px;
+            font-size: 22px;
+            line-height: 25px;
             padding: 20px 0;
           }
           .precio {
@@ -330,10 +334,64 @@
           a {
             padding: 8px 18px;
             background-color: #777;
-            font-size: 22px;
+            font-size: 20px;
           }
         }
       }
+    }
+  }
+  #itemmochilas {
+    padding: 10px;
+    .titulo {
+      p {
+        font-size: 26px;
+      }
+    }
+    .texto {
+      h1 {
+        font-size: 26px;
+        padding: 15px 0 0 0;
+      }
+      p {
+        font-size: 18px;
+        line-height: 22px;
+      }
+      .precio {
+        b {
+          font-size: 26px;
+          margin-right: 25px;
+        }
+      }
+      .row {
+        .col-lg-4 {
+          margin-bottom: 20px;
+        }
+        .col-lg-8 {
+          button {
+            padding: 10px;
+          }
+        }
+      }
+      .botones {
+        p {
+          font-weight: 300;
+          color: #444;
+          font-size: 22px;
+          line-height: 24px;
+          padding: 20px 0;
+        }
+        button {
+          width: 30px;
+          height: 30px;
+          margin: 5px;
+          border-radius: 5px;
+          border: none;
+        }
+      }
+    }
+    .bbox {
+      border-bottom: 3px solid $amarillo;
+      margin-top: 30px;
     }
   }
 }

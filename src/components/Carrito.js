@@ -25,11 +25,11 @@ const Carrito = ({listado}) => {
                     <div className="col-12 total">
                         <p>TOTAL ${totalCarro}</p>
                     </div>
-                    <div className="col-sm-6 order-0"></div>
-                    <div className="col-sm-3 presupuesto">
+                    <div className="col-sm-8 order-0"></div>
+                    <div className="col-sm-2 presupuesto">
                         <NavLink className="volver" to="/">VOLVER AL CATÁLOGO</NavLink>
                     </div>
-                    <div className="col-sm-3 presupuesto">
+                    <div className="col-sm-2 presupuesto">
                         <NavLink to="/checkout">SOLICITAR PRESUPUESTO</NavLink>
                     </div>
                     </>

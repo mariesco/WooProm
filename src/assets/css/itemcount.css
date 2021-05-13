@@ -4,25 +4,42 @@
 }
 
 #itemcount .contador .btncontador {
-  padding: 10px 7px;
+  padding: 12px 5px;
   background-color: #f5df4d;
   border: none;
   border-radius: 5px;
 }
 
 #itemcount .contador .spancontador {
-  padding: 10px 25px;
+  padding: 10px 15px;
   border-bottom: 1px solid black;
-  margin: 0 5px;
+  margin: 0 0px;
+  font-weight: 900;
 }
 
-#itemcount .agregar button {
+#itemcount .agregar .add {
   padding: 10px 0px;
   width: 100%;
+  max-width: 300px;
   background-color: #383838;
   font-size: 20px;
   color: white;
   border: none;
   border-radius: 5px;
+}
+
+@media (max-width: 576px) {
+  #itemcount .contador {
+    margin-bottom: 15px;
+  }
+  #itemcount .contador .btncontador {
+    padding: 15px 10px;
+  }
+  #itemcount .contador .spancontador {
+    padding: 15px 45px;
+    border-bottom: 1px solid black;
+    margin: 0 0px;
+    font-weight: 900;
+  }
 }
 /*# sourceMappingURL=itemcount.css.map */

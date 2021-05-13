@@ -15,7 +15,7 @@ const ListadoProductos = ({titulo, listado}) => {
             {
                     
                     listado.map(a => {
-                        return <div className="col-sm-3">
+                        return <div className="col-6 col-sm-3">
                             <Item key={a.id} id={a.id} title={a.title} description={a.description} price={a.price} stock={a.stock} pictureUrl={a.pictureUrl} pictureUrl1={a.pictureUrl1} pictureUrl2={a.pictureUrl2} />
                             </div> 
                     })

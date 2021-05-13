@@ -5,26 +5,45 @@
     margin-bottom: 0px;
     padding: 0;
     .btncontador {
-      padding: 10px 7px;
+      padding: 12px 5px;
       background-color: $amarillo;
       border: none;
       border-radius: 5px;
     }
     .spancontador {
-      padding: 10px 25px;
+      padding: 10px 15px;
       border-bottom: 1px solid black;
-      margin: 0 5px;
+      margin: 0 0px;
+      font-weight: 900;
     }
   }
   .agregar {
-    button {
+    .add {
       padding: 10px 0px;
       width: 100%;
+      max-width: 300px;
       background-color: $grisOscuro;
       font-size: 20px;
       color: white;
       border: none;
       border-radius: 5px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  #itemcount {
+    .contador {
+      margin-bottom: 15px;
+      .btncontador {
+        padding: 15px 10px;
+      }
+      .spancontador {
+        padding: 15px 45px;
+        border-bottom: 1px solid black;
+        margin: 0 0px;
+        font-weight: 900;
+      }
     }
   }
 }

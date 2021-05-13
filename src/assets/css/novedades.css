@@ -12,36 +12,38 @@
 
 #novedades .titulo div h1 {
   color: #777;
-  padding: 20px 0;
+  padding: 20px 0 0 0;
+  font-size: 2.1rem;
   border-bottom: 3px solid #f5df4d;
 }
 
 #novedades .slide-container {
   width: 100%;
-  overflow: hidden;
 }
 
-#novedades .slide-container .react-multi-carousel-list {
+#novedades .slide-container .swiper-container {
   padding: 50px 0;
-  overflow: initial;
 }
 
-#novedades .slide-container .react-multi-carousel-list .react-multi-carousel-track .react-multi-carousel-item {
+#novedades .slide-container .swiper-container .swiper-wrapper .swiper-slide {
   padding: 25px;
 }
 
-#novedades .slide-container .react-multi-carousel-list .react-multi-carousel-track .react-multi-carousel-item div {
+#novedades .slide-container .swiper-container .swiper-wrapper .swiper-slide div {
   text-align: center;
 }
 
-#novedades .slide-container .react-multi-carousel-list .react-multi-carousel-track .react-multi-carousel-item div img {
+#novedades .slide-container .swiper-container .swiper-wrapper .swiper-slide div img {
   max-width: 100%;
   width: 280px;
   height: auto;
   margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
-#novedades .slide-container .react-multi-carousel-list .react-multi-carousel-track .react-multi-carousel-item div a {
+#novedades .slide-container .swiper-container .swiper-wrapper .swiper-slide div a {
   text-decoration: none;
   color: black;
   background-color: #f5df4d;
@@ -49,34 +51,16 @@
   padding: 8px 12px;
 }
 
-#novedades .slide-container .react-multi-carousel-list .react-multi-carousel-track .react-multi-carousel-item div a:hover {
+#novedades .slide-container .swiper-container .swiper-wrapper .swiper-slide div a:hover {
   opacity: 0.7;
 }
 
-#novedades .slide-container .react-multi-carousel-list .react-multiple-carousel__arrow {
-  background: rgba(0, 0, 0, 0.3);
-}
-
-#novedades .slide-container .react-multi-carousel-list .react-multiple-carousel__arrow--right {
+#novedades .slide-container .swiper-container .swiper-button-next {
   right: -12px;
 }
 
-#novedades .slide-container .react-multi-carousel-list .react-multiple-carousel__arrow--left {
+#novedades .slide-container .swiper-container .swiper-button-prev {
   left: -12px;
-}
-
-#novedades .slide-container .react-multi-carousel-list .react-multi-carousel-dot-list {
-  display: none;
-}
-
-#novedades .slide-container .react-multi-carousel-list .react-multi-carousel-dot-list .react-multi-carousel-dot button {
-  width: 20px;
-  height: 20px;
-}
-
-#novedades .slide-container .react-multi-carousel-list .react-multi-carousel-dot-list .react-multi-carousel-dot--active button {
-  border: 2px solid #f5df4d;
-  background-color: white;
 }
 
 #novedades .boton {
@@ -98,30 +82,19 @@
   #novedades .titulo div h1 {
     border-bottom: 3px solid #f5df4d;
   }
-  #novedades .slide-container .react-multi-carousel-list {
+  #novedades .slide-container .swiper-container {
     padding: 50px 0;
   }
-  #novedades .slide-container .react-multi-carousel-list .react-multi-carousel-track .react-multi-carousel-item {
+  #novedades .slide-container .swiper-container .swiper-wrapper .swiper-slide {
     padding: 25px 5px;
   }
-  #novedades .slide-container .react-multi-carousel-list .react-multi-carousel-track .react-multi-carousel-item div img {
+  #novedades .slide-container .swiper-container .swiper-wrapper .swiper-slide div img {
     max-width: 100%;
     width: auto;
     height: auto;
   }
-  #novedades .slide-container .react-multi-carousel-list .react-multi-carousel-track .react-multi-carousel-item div a {
+  #novedades .slide-container .swiper-container .swiper-wrapper .swiper-slide div a {
     padding: 8px 12px;
-  }
-  #novedades .slide-container .react-multi-carousel-list .react-multi-carousel-dot-list .react-multi-carousel-dot button {
-    width: 20px;
-    height: 20px;
-  }
-  #novedades .slide-container .react-multi-carousel-list .react-multi-carousel-dot-list .react-multiple-carousel__arrow {
-    background: rgba(0, 0, 0, 0.1);
-  }
-  #novedades .slide-container .react-multi-carousel-list .react-multi-carousel-dot-list .react-multi-carousel-dot--active button {
-    border: 2px solid #f5df4d;
-    background-color: white;
   }
 }
 /*# sourceMappingURL=novedades.css.map */

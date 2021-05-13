@@ -38,33 +38,22 @@ import waterman from '../assets/img/logos-nuestras-marcas/Waterman.png'
 import xdesign from '../assets/img/logos-nuestras-marcas/xdesing.png'
 import zecat from '../assets/img/logos-nuestras-marcas/Zecat.png'
 import ItemClientesMarcas from './ItemClientesMarcas'
-import SlidePadre from './SlidePadre'
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/swiper.min.css";
+import "swiper/components/navigation/navigation.min.css"
+import "swiper/components/pagination/pagination.min.css"
 import '../assets/css/compromiso.css'
 
+// import Swiper core and required modules
+import SwiperCore, {
+  Navigation,Pagination,Mousewheel,Keyboard
+} from 'swiper/core';
+// install Swiper modules
+SwiperCore.use([Navigation,Pagination,Mousewheel,Keyboard]);
+
 const Marcas = () => {
-    const responsive = {
-        superLargeDesktop: {
-          // the naming can be any, depends on you.
-          breakpoint: { max: 4000, min: 3000 },
-          items: 7,
-          slidesToSlide: 7
-        },
-        desktop: {
-          breakpoint: { max: 3000, min: 1024 },
-          items: 6,
-          slidesToSlide: 6
-        },
-        tablet: {
-          breakpoint: { max: 1024, min: 464 },
-          items: 3,
-          slidesToSlide: 3
-        },
-        mobile: {
-          breakpoint: { max: 464, min: 0 },
-          items: 1,
-          slidesToSlide: 1
-        }
-      };
       const logo1 = <img className="img-fluid" src= {cardon} alt=""/>
       const logo2 = <img className="img-fluid" src= {bagsmart} alt=""/>
       const logo3 = <img className="img-fluid" src= {benevento} alt=""/>
@@ -105,48 +94,45 @@ const Marcas = () => {
       const logo38 = <img className="img-fluid" src= {zecat} alt=""/>
 
       const content =[
-        <ItemClientesMarcas imagen={logo1} />,
-        <ItemClientesMarcas imagen={logo2} />,
-        <ItemClientesMarcas imagen={logo3} />,
-        <ItemClientesMarcas imagen={logo4} />,
-        <ItemClientesMarcas imagen={logo5} />,
-        <ItemClientesMarcas imagen={logo6} />,
-        <ItemClientesMarcas imagen={logo7} />,
-        <ItemClientesMarcas imagen={logo8} />,
-        <ItemClientesMarcas imagen={logo9} />,
-        <ItemClientesMarcas imagen={logo10} />,
-        <ItemClientesMarcas imagen={logo11} />,
-        <ItemClientesMarcas imagen={logo12} />,
-        <ItemClientesMarcas imagen={logo13} />,
-        <ItemClientesMarcas imagen={logo14} />,
-        <ItemClientesMarcas imagen={logo15} />,
-        <ItemClientesMarcas imagen={logo16} />,
-        <ItemClientesMarcas imagen={logo17} />,
-        <ItemClientesMarcas imagen={logo18} />,
-        <ItemClientesMarcas imagen={logo19} />,
-        <ItemClientesMarcas imagen={logo20} />,
-        <ItemClientesMarcas imagen={logo21} />,
-        <ItemClientesMarcas imagen={logo22} />,
-        <ItemClientesMarcas imagen={logo23} />,
-        <ItemClientesMarcas imagen={logo24} />,
-        <ItemClientesMarcas imagen={logo25} />,
-        <ItemClientesMarcas imagen={logo26} />,
-        <ItemClientesMarcas imagen={logo27} />,
-        <ItemClientesMarcas imagen={logo28} />,
-        <ItemClientesMarcas imagen={logo29} />,
-        <ItemClientesMarcas imagen={logo30} />,
-        <ItemClientesMarcas imagen={logo31} />,
-        <ItemClientesMarcas imagen={logo32} />,
-        <ItemClientesMarcas imagen={logo33} />,
-        <ItemClientesMarcas imagen={logo34} />,
-        <ItemClientesMarcas imagen={logo35} />,
-        <ItemClientesMarcas imagen={logo36} />,
-        <ItemClientesMarcas imagen={logo37} />,
-        <ItemClientesMarcas imagen={logo38} />
+        <SwiperSlide><ItemClientesMarcas imagen={logo1} /></SwiperSlide>,
+        <SwiperSlide><ItemClientesMarcas imagen={logo2} /></SwiperSlide>,
+        <SwiperSlide><ItemClientesMarcas imagen={logo3} /></SwiperSlide>,
+        <SwiperSlide><ItemClientesMarcas imagen={logo4} /></SwiperSlide>,
+        <SwiperSlide><ItemClientesMarcas imagen={logo5} /></SwiperSlide>,
+        <SwiperSlide><ItemClientesMarcas imagen={logo6} /></SwiperSlide>,
+        <SwiperSlide><ItemClientesMarcas imagen={logo7} /></SwiperSlide>,
+        <SwiperSlide><ItemClientesMarcas imagen={logo8} /></SwiperSlide>,
+        <SwiperSlide><ItemClientesMarcas imagen={logo9} /></SwiperSlide>,
+        <SwiperSlide><ItemClientesMarcas imagen={logo10} /></SwiperSlide>,
+        <SwiperSlide><ItemClientesMarcas imagen={logo11} /></SwiperSlide>,
+        <SwiperSlide><ItemClientesMarcas imagen={logo12} /></SwiperSlide>,
+        <SwiperSlide><ItemClientesMarcas imagen={logo13} /></SwiperSlide>,
+        <SwiperSlide><ItemClientesMarcas imagen={logo14} /></SwiperSlide>,
+        <SwiperSlide><ItemClientesMarcas imagen={logo15} /></SwiperSlide>,
+        <SwiperSlide><ItemClientesMarcas imagen={logo16} /></SwiperSlide>,
+        <SwiperSlide><ItemClientesMarcas imagen={logo17} /></SwiperSlide>,
+        <SwiperSlide><ItemClientesMarcas imagen={logo18} /></SwiperSlide>,
+        <SwiperSlide><ItemClientesMarcas imagen={logo19} /></SwiperSlide>,
+        <SwiperSlide><ItemClientesMarcas imagen={logo20} /></SwiperSlide>,
+        <SwiperSlide><ItemClientesMarcas imagen={logo21} /></SwiperSlide>,
+        <SwiperSlide><ItemClientesMarcas imagen={logo22} /></SwiperSlide>,
+        <SwiperSlide><ItemClientesMarcas imagen={logo23} /></SwiperSlide>,
+        <SwiperSlide><ItemClientesMarcas imagen={logo24} /></SwiperSlide>,
+        <SwiperSlide><ItemClientesMarcas imagen={logo25} /></SwiperSlide>,
+        <SwiperSlide><ItemClientesMarcas imagen={logo26} /></SwiperSlide>,
+        <SwiperSlide><ItemClientesMarcas imagen={logo27} /></SwiperSlide>,
+        <SwiperSlide><ItemClientesMarcas imagen={logo28} /></SwiperSlide>,
+        <SwiperSlide><ItemClientesMarcas imagen={logo29} /></SwiperSlide>,
+        <SwiperSlide><ItemClientesMarcas imagen={logo30} /></SwiperSlide>,
+        <SwiperSlide><ItemClientesMarcas imagen={logo31} /></SwiperSlide>,
+        <SwiperSlide><ItemClientesMarcas imagen={logo32} /></SwiperSlide>,
+        <SwiperSlide><ItemClientesMarcas imagen={logo33} /></SwiperSlide>,
+        <SwiperSlide><ItemClientesMarcas imagen={logo34} /></SwiperSlide>,
+        <SwiperSlide><ItemClientesMarcas imagen={logo35} /></SwiperSlide>,
+        <SwiperSlide><ItemClientesMarcas imagen={logo36} /></SwiperSlide>,
+        <SwiperSlide><ItemClientesMarcas imagen={logo37} /></SwiperSlide>,
+        <SwiperSlide><ItemClientesMarcas imagen={logo38} /></SwiperSlide>
         ]
-
-        const infinite = true
-        const autoPlay = true
         
     return (
         <div id="marcas" className="row">
@@ -154,7 +140,23 @@ const Marcas = () => {
                 <h1>NUESTRAS MARCAS</h1>
             </div>
             <div className="col-12 slide-container">
-                <SlidePadre responsive={responsive} content={content} infinite={infinite} autoPlay={autoPlay} />
+              <Swiper cssMode={true} slidesPerView={2} loop={true} slidesPerGroup={2} navigation={true} pagination={false} mousewheel={true} keyboard={true} autoplay={true}  className="mySwiper" 
+              breakpoints={{
+               576 : {
+               slidesPerView: 4,
+               slidesPerGroup: 4,
+               pagination: true,
+               },
+               1045 : {
+               slidesPerView: 7,
+               slidesPerGroup: 7,
+               pagination: true,
+               autoplay: true,
+               } 
+
+              }}>
+                {content}
+              </Swiper>
             </div>            
         </div>
     )

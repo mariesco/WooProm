@@ -7,10 +7,11 @@
   --bs-gutter-y: 0;
 }
 
-.react-multi-carousel-list {
+.swiper-container {
   padding: 0 0 50px 0;
-  .react-multi-carousel-track {
-    .react-multi-carousel-item {
+  overflow: initial;
+  .swiper-wrapper {
+    .swiper-slide {
       padding: 0;
       div {
         img {
@@ -20,24 +21,20 @@
       }
     }
   }
-  .react-multiple-carousel__arrow {
-    background: rgba(0, 0, 0, 0.3);
+  .swiper-pagination {
+    .swiper-pagination-bullet {
+      width: 15px;
+      height: 15px;
+    }
+    .swiper-pagination-bullet-active {
+      border: 2px solid $amarillo;
+      background-color: white;
+    }
   }
-  .react-multi-carousel-dot-list {
-    .react-multi-carousel-dot {
-      button {
-        width: 20px;
-        height: 20px;
-      }
-    }
-    .react-multiple-carousel__arrow {
-      background: rgba(0, 0, 0, 0.1);
-    }
-    .react-multi-carousel-dot--active {
-      button {
-        border: 2px solid $amarillo;
-        background-color: white;
-      }
-    }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: $grisOscuro;
+    top: 50%;
   }
 }

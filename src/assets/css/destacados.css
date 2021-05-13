@@ -6,7 +6,7 @@
   border-bottom: 3px solid #333;
   display: inline;
   width: 100%;
-  padding: 20px 0;
+  padding: 20px 0 0 0;
 }
 
 #destacados .titulo svg {
@@ -17,42 +17,38 @@
 
 #destacados .titulo p {
   display: inline;
-  font-size: 32px;
+  font-size: 2.1rem;
   color: #333;
   font-weight: 700;
 }
 
 #destacados .slide-container {
-  overflow: hidden;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#destacados .slide-container .react-multi-carousel-list {
-  overflow: initial;
+#destacados .slide-container .swiper-container .swiper-button-next {
+  right: -20px;
 }
 
-#destacados .slide-container .react-multi-carousel-list .react-multiple-carousel__arrow {
-  background: rgba(0, 0, 0, 0.3);
+#destacados .slide-container .swiper-container .swiper-button-prev {
+  left: -20px;
 }
 
-#destacados .slide-container .react-multi-carousel-list .react-multiple-carousel__arrow--right {
-  right: -12px;
-}
-
-#destacados .slide-container .react-multi-carousel-list .react-multiple-carousel__arrow--left {
-  left: -12px;
-}
-
-#destacados .slide-container .react-multi-carousel-list .react-multi-carousel-dot-list .react-multi-carousel-dot button {
+#destacados .slide-container .swiper-container .swiper-pagination .swiper-pagination-bullet {
   background-color: #383838;
+  opacity: 1;
+  bottom: 0;
 }
 
-#destacados .slide-container .react-multi-carousel-list .react-multi-carousel-dot-list .react-multi-carousel-dot--active button {
+#destacados .slide-container .swiper-container .swiper-pagination .swiper-pagination-bullet-active {
   border: 2px solid #f5df4d;
-  background-color: #cccccc;
+  background-color: white;
 }
 
 #destacados .slide-container .row {
-  padding: 0px 90px;
+  padding: 0px 10px;
 }
 
 #destacados .slide-container .row .col-sm-6 {
@@ -60,10 +56,10 @@
 }
 
 #destacados .slide-container .row .col-sm-6 h1 {
-  font-size: 36px;
+  font-size: 32px;
   color: #333;
   font-weight: 900;
-  padding: 15px 0;
+  padding: 15px 0 0 0;
 }
 
 #destacados .slide-container .row .col-sm-6 p {
@@ -97,7 +93,7 @@
   border-bottom: 3px solid #f5df4d;
   display: inline;
   width: 100%;
-  padding: 20px 0;
+  padding: 20px 0 0 0;
   margin-bottom: 30px;
 }
 
@@ -110,11 +106,7 @@
 
 #itemmochilas .slide-container {
   text-align: center;
-  padding: 40px 0;
-}
-
-#itemmochilas .slide-container img {
-  height: 450px;
+  padding: 20px 0 40px 0;
 }
 
 #itemmochilas .slide-container .image-gallery .image-gallery-content .image-gallery-thumbnails-container button {
@@ -125,11 +117,16 @@
   height: auto;
 }
 
+#itemmochilas .slide-container .image-gallery .fullscreen {
+  top: 30%;
+}
+
 #itemmochilas .texto h1 {
   font-size: 36px;
   color: #333;
   font-weight: 900;
-  padding: 15px 0;
+  padding: 20px 0 0 0;
+  margin: 0;
 }
 
 #itemmochilas .texto p {
@@ -137,7 +134,7 @@
   color: #444;
   font-size: 26px;
   line-height: 29px;
-  padding: 20px 0;
+  padding: 5px 0 20px 0;
 }
 
 #itemmochilas .texto .precio b {
@@ -205,8 +202,11 @@
   #destacados {
     padding: 30px;
   }
+  #destacados .slide-container {
+    width: 100%;
+  }
   #destacados .slide-container .row {
-    padding: 0px 30px;
+    padding: 0px 20px;
   }
   #destacados .slide-container .row .col-sm-6 {
     padding: 30px 15px 0 15px;
@@ -242,7 +242,7 @@
     font-size: 32px;
     color: #333;
     font-weight: 900;
-    padding: 15px 0;
+    padding: 15px 0 0 0;
   }
   #itemmochilas .texto p {
     font-size: 22px;
@@ -307,6 +307,12 @@
   #destacados .titulo p {
     font-size: 26px;
   }
+  #destacados .slide-container {
+    width: 90%;
+  }
+  #destacados .slide-container .swiper-container .swiper-slide {
+    width: 100%;
+  }
   #destacados .slide-container .row {
     padding: 0px 10px;
   }
@@ -314,12 +320,12 @@
     padding: 30px 0px 0 0px;
   }
   #destacados .slide-container .row .col-sm-6 h1 {
-    font-size: 30px;
+    font-size: 26px;
     padding: 15px 0;
   }
   #destacados .slide-container .row .col-sm-6 p {
-    font-size: 26px;
-    line-height: 29px;
+    font-size: 22px;
+    line-height: 25px;
     padding: 20px 0;
   }
   #destacados .slide-container .row .col-sm-6 .precio {
@@ -329,7 +335,49 @@
   #destacados .slide-container .row .col-sm-6 a {
     padding: 8px 18px;
     background-color: #777;
+    font-size: 20px;
+  }
+  #itemmochilas {
+    padding: 10px;
+  }
+  #itemmochilas .titulo p {
+    font-size: 26px;
+  }
+  #itemmochilas .texto h1 {
+    font-size: 26px;
+    padding: 15px 0 0 0;
+  }
+  #itemmochilas .texto p {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  #itemmochilas .texto .precio b {
+    font-size: 26px;
+    margin-right: 25px;
+  }
+  #itemmochilas .texto .row .col-lg-4 {
+    margin-bottom: 20px;
+  }
+  #itemmochilas .texto .row .col-lg-8 button {
+    padding: 10px;
+  }
+  #itemmochilas .texto .botones p {
+    font-weight: 300;
+    color: #444;
     font-size: 22px;
+    line-height: 24px;
+    padding: 20px 0;
+  }
+  #itemmochilas .texto .botones button {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+  }
+  #itemmochilas .bbox {
+    border-bottom: 3px solid #f5df4d;
+    margin-top: 30px;
   }
 }
 /*# sourceMappingURL=destacados.css.map */

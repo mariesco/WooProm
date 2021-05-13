@@ -1,46 +1,48 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
-import "react-multi-carousel/lib/styles.css";
 import remera from '../assets/img/productos/remera_quina_perfil.jpg'
 import campera from '../assets/img/productos/chale_polar_1.jpg'
 import taza from '../assets/img/productos/jarro_enlozado.jpg'
-import SlidePadre from './SlidePadre'
 import ItemNovedades from './ItemNovedades';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/swiper.min.css";
+import "swiper/components/navigation/navigation.min.css"
+import "swiper/components/pagination/pagination.min.css"
+// import Swiper core and required modules
+import SwiperCore, {
+  Navigation,Pagination,Mousewheel,Keyboard
+} from 'swiper/core';
+// install Swiper modules
+SwiperCore.use([Navigation,Pagination,Mousewheel,Keyboard]);
 
 const SlideNovedades = ({listado}) => {
-    const responsive = {
-        superLargeDesktop: {
-          // the naming can be any, depends on you.
-          breakpoint: { max: 4000, min: 3000 },
-          items: 5,
-          slidesToSlide: 5
-        },
-        desktop: {
-          breakpoint: { max: 3000, min: 1024 },
-          items: 5,
-          slidesToSlide: 5
-        },
-        tablet: {
-          breakpoint: { max: 1024, min: 464 },
-          items: 3,
-          slidesToSlide: 4
-        },
-        mobile: {
-          breakpoint: { max: 464, min: 0 },
-          items: 1,
-          slidesToSlide: 1
-        }
-      };
       const content =[
           listado.map(a => {
-            return <ItemNovedades  key={a.id} id={a.id} pictureUrl={a.pictureUrl}  />
+            return <SwiperSlide><ItemNovedades  key={a.id} id={a.id} pictureUrl={a.pictureUrl}  /></SwiperSlide>
           })]
 
-        const infinite = true
-        const autoPlay = true
         
     return (
-      <SlidePadre responsive={responsive} content={content} autoPlay={autoPlay} infinite={infinite} />
+      <>
+      <Swiper cssMode={true} slidesPerView={2} loop={true} slidesPerGroup={2} navigation={true} pagination={false} mousewheel={true} keyboard={true} className="mySwiper" 
+      breakpoints={{
+       576 : {
+       slidesPerView: 3,
+       slidesPerGroup: 3,
+       pagination: true,
+       },
+       1045 : {
+       slidesPerView: 5,
+       slidesPerGroup: 5,
+       pagination: true,
+       } 
+      }}>
+        {content}
+      </Swiper>
+      </>
+      
     )
 }
 

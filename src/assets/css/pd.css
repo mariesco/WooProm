@@ -8,6 +8,7 @@
 
 #productos-destacados .col-12 div h1 {
   color: #939597;
+  font-size: 2.1rem;
 }
 
 #productos-destacados .col-sm-3 {
@@ -26,6 +27,7 @@
 #productos-destacados .col-sm-3 .react-multi-carousel-list .react-multi-carousel-track .react-multi-carousel-item img {
   max-width: 100%;
   margin-bottom: 15px;
+  padding: 25px;
 }
 
 #productos-destacados .col-sm-3 .react-multi-carousel-list .react-multi-carousel-dot-list .react-multi-carousel-dot {
@@ -51,11 +53,11 @@
 }
 
 #productos-destacados .col-sm-3 .react-multi-carousel-list .react-multiple-carousel__arrow--left {
-  left: -15px;
+  left: 10px;
 }
 
 #productos-destacados .col-sm-3 .react-multi-carousel-list .react-multiple-carousel__arrow--right {
-  right: -15px;
+  right: 10px;
 }
 
 #productos-destacados .col-sm-3 .texto a {
@@ -107,10 +109,10 @@
     font-weight: 900;
   }
   #productos-destacados .col-lg-2 .react-multi-carousel-list .react-multiple-carousel__arrow--left {
-    left: -10px;
+    left: 8px;
   }
   #productos-destacados .col-lg-2 .react-multi-carousel-list .react-multiple-carousel__arrow--right {
-    right: -10px;
+    right: 8px;
   }
 }
 /*# sourceMappingURL=pd.css.map */

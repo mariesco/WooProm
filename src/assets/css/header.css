@@ -60,19 +60,20 @@
   z-index: 9;
 }
 
-#mainNav .col-sm-3 {
-  padding: 35px;
-  padding-left: 60px;
+#mainNav .logo {
+  padding: 35px 0;
+  text-align: center;
 }
 
 #mainNav .drop {
-  padding: 35px 0;
+  padding: 32px 0;
 }
 
 #mainNav .drop .dropdown .btn {
   padding: 8px 25px;
   border-radius: 8px;
   background-color: #f5df4d;
+  width: 100%;
 }
 
 #mainNav .drop .dropdown:hover > .dropdown-menu {
@@ -84,25 +85,25 @@
   pointer-events: none;
 }
 
-#mainNav .col-sm-5 {
+#mainNav .col-sm-6 {
   padding: 36px;
   padding-bottom: 0;
 }
 
-#mainNav .col-sm-5 form {
+#mainNav .col-sm-6 form {
   text-align: right;
 }
 
-#mainNav .col-sm-5 form input {
+#mainNav .col-sm-6 form input {
   border: none;
   border-radius: 15px;
 }
 
-#mainNav .col-sm-5 form :-ms-input-placeholder {
+#mainNav .col-sm-6 form :-ms-input-placeholder {
   color: #939597;
 }
 
-#mainNav .col-sm-5 form .buscar {
+#mainNav .col-sm-6 form .buscar {
   position: relative;
   top: -32px;
   right: 4px;
@@ -113,7 +114,7 @@
   padding: 2px 15px;
 }
 
-#mainNav .col-sm-5 form .buscar svg {
+#mainNav .col-sm-6 form .buscar svg {
   margin-right: 10px;
 }
 
@@ -160,24 +161,24 @@
     width: 100%;
     margin: 0;
   }
-  #mainNav .col-sm-3 {
-    padding: 40px 5px;
+  #mainNav .logo {
+    padding: 40px 0px;
   }
-  #mainNav .col-sm-5 {
+  #mainNav .col-sm-6 {
     padding: 36px;
     padding-bottom: 0;
   }
-  #mainNav .col-sm-5 form {
+  #mainNav .col-sm-6 form {
     text-align: right;
   }
-  #mainNav .col-sm-5 form input {
+  #mainNav .col-sm-6 form input {
     border: none;
     border-radius: 15px;
   }
-  #mainNav .col-sm-5 form :-ms-input-placeholder {
+  #mainNav .col-sm-6 form :-ms-input-placeholder {
     color: #939597;
   }
-  #mainNav .col-sm-5 form .buscar {
+  #mainNav .col-sm-6 form .buscar {
     position: relative;
     top: -34px;
     margin-left: -70px;
@@ -187,7 +188,7 @@
     border: none;
     padding: 4px 15px;
   }
-  #mainNav .col-sm-5 form .buscar svg {
+  #mainNav .col-sm-6 form .buscar svg {
     margin-right: 10px;
   }
   #mainNav .carro {
@@ -220,9 +221,11 @@
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+    right: 0;
   }
   .navbar .navbar-nav div .redes {
     margin: 20px 0;
+    margin-bottom: 50px;
     padding: 5px 0;
     width: 60px;
   }
@@ -230,20 +233,24 @@
     padding: 0;
     border: none;
   }
+  .navbar .navbar-nav div .redes .nav-link img {
+    max-width: 50%;
+  }
   .navbar .navbar-nav div .redes1 {
-    margin-left: 45px;
+    margin-left: 0px;
   }
   #mainNav {
     padding: 0px 20px;
   }
-  #mainNav .col-sm-3 {
+  #mainNav .logo {
     padding: 0;
-    position: fixed;
-    top: 10px;
+    text-align: left;
+    position: absolute;
+    top: -40px;
     z-index: 9999;
   }
-  #mainNav .col-sm-3 img {
-    max-width: 75%;
+  #mainNav .logo img {
+    max-width: 100%;
     width: 100px;
   }
   #mainNav .drop {
@@ -253,14 +260,14 @@
   #mainNav .drop .dropdown .btn {
     padding: 8px 25px;
   }
-  #mainNav .col-sm-5 {
+  #mainNav .col-sm-6 {
     padding: 36px 0;
     padding-bottom: 0;
   }
-  #mainNav .col-sm-5 form {
+  #mainNav .col-sm-6 form {
     margin-bottom: 0;
   }
-  #mainNav .col-sm-5 form .buscar {
+  #mainNav .col-sm-6 form .buscar {
     top: -36px;
     margin-left: -70px;
     padding: 4px 15px;
@@ -268,7 +275,7 @@
   #mainNav .carro {
     max-width: 50%;
     padding: 35px 0;
-    padding-right: 20px;
+    padding-right: 0px;
   }
   #mainNav .carro .buscar2 {
     color: #f5df4d;
@@ -276,10 +283,10 @@
   #mainNav .carro .buscar2 svg {
     height: 25px;
     width: 25px;
-    margin-right: 15px;
+    margin-right: 0px;
   }
   #mainNav .carro img {
-    width: 40px;
+    width: 30px;
   }
 }
 /*# sourceMappingURL=header.css.map */
