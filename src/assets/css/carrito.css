@@ -21,37 +21,46 @@
   border-bottom: 1px solid #383838;
 }
 
-#carrito .row .lista .row .col-sm-6 .row {
+#carrito .row .lista .row .col-sm-5 .row {
   padding: 25px 0;
 }
 
-#carrito .row .lista .row .col-sm-6 .row .col-5 img {
+#carrito .row .lista .row .col-sm-5 .row .col-6 img {
   width: 80px;
   height: 80px;
 }
 
-#carrito .row .lista .row .col-sm-6 .row .col-7 .modelo {
+#carrito .row .lista .row .col-sm-5 .row .col-6 .modelo {
   font-weight: 900;
   font-size: 26px;
   margin: 0;
 }
 
-#carrito .row .lista .row .col-sm-6 .row .col-7 .detalle {
+#carrito .row .lista .row .col-sm-5 .row .col-6 .detalle {
   font-size: 22px;
   font-weight: 300;
   margin: 0;
 }
 
-#carrito .row .lista .row .col-sm-6 .row .col-7 .ic {
+#carrito .row .lista .row .col-sm-5 .row .col-6 .ic {
   opacity: 0;
 }
 
 #carrito .row .lista .row .count {
   text-align: right;
-  padding: 40px 0;
+  padding: 15px 0;
 }
 
 #carrito .row .lista .row .count p {
+  font-size: 32px;
+}
+
+#carrito .row .lista .row .count2 {
+  text-align: right;
+  padding: 40px 0;
+}
+
+#carrito .row .lista .row .count2 p {
   font-size: 32px;
 }
 

@@ -19,16 +19,16 @@
       padding: 10px 0;
       border-bottom: 1px solid $grisOscuro;
       .row {
-        .col-sm-6 {
+        .col-sm-5 {
           .row {
             padding: 25px 0;
-            .col-5 {
+            .col-6 {
               img {
                 width: 80px;
                 height: 80px;
               }
             }
-            .col-7 {
+            .col-6 {
               .modelo {
                 font-weight: 900;
                 font-size: 26px;
@@ -46,6 +46,13 @@
           }
         }
         .count {
+          text-align: right;
+          padding: 15px 0;
+          p {
+            font-size: 32px;
+          }
+        }
+        .count2 {
           text-align: right;
           padding: 40px 0;
           p {

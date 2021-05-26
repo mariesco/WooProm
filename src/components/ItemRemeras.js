@@ -1,6 +1,6 @@
 import React from 'react'
 import Marcas from './Marcas'
-import Slide1 from './Slide1'
+import slide from '../assets/img/indumentaria.png'
 import ListadoProductos from './ListadoProductos'
 
 const remeras = <h1>Remeras</h1>
@@ -8,7 +8,9 @@ const remeras = <h1>Remeras</h1>
 const ItemRemeras = ({listado}) => {
     return (
         <>
-            <Slide1/>
+            <div id="img-remeras">
+                <img src={slide} alt="" />
+            </div>
             <ListadoProductos listado={listado} titulo={remeras} />
             <Marcas/>
         </>
